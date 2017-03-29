@@ -1,0 +1,2432 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>APTS_Account_Partner_Program</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>APTS_Account_Partner_Program</shortDescription>
+        <value>CSM Program</value>
+    </labels>
+    <labels>
+        <fullName>APTS_CreateAgreement_ErrorMessage_Label</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>APTS_CreateAgreement_ErrorMessage_Label</shortDescription>
+        <value>There is no applicable request available for this Account!</value>
+    </labels>
+    <labels>
+        <fullName>APTS_StatusPleaseWait</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>StatusPleaseWait</shortDescription>
+        <value>Please wait</value>
+    </labels>
+    <labels>
+        <fullName>Account_Team_Request_RecordType</fullName>
+        <categories>Core_ChangeRequestHandler</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Account Team Request RecordType</shortDescription>
+        <value>Account_Team_Request</value>
+    </labels>
+    <labels>
+        <fullName>CORE_IPS_CASE_SLA_FIRST_RESPONSE_IN_MINUTES</fullName>
+        <categories>SLA</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IPS Case SLA First Response In Minutes</shortDescription>
+        <value>540</value>
+    </labels>
+    <labels>
+        <fullName>CORE_IPS_GEC_Query_One</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IPS GEC Question One</shortDescription>
+        <value>Do any of your questions relate to the use of Intel products in a military, defense, intelligence, nuclear/biochemical or space item?</value>
+    </labels>
+    <labels>
+        <fullName>CORE_IPS_GEC_Query_One_Addl_Info</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IPS GEC Question One Additional Info</shortDescription>
+        <value>* Due to US and other countries’ export regulations, any questions, technical support, services, feedback, guidance, optimization, training, assistance, or other work performed by Intel that are directed toward the incorporation and/or implementation of Intel’s product in a military, defense intelligence, nuclear/biochemical or space item may result in a defense service or the transfer of technical data and require authorization from the US or other applicable governments.</value>
+    </labels>
+    <labels>
+        <fullName>CORE_IPS_GEC_Query_Two</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IPS GEC Question Two</shortDescription>
+        <value>Will you be providing any technical data that is related to a defense article or any military, defense, intelligence, nuclear/biochemical or space end use?</value>
+    </labels>
+    <labels>
+        <fullName>CORE_IPS_GEC_Query_Two_Addl_Info</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IPS GEC Question Two Additional Info</shortDescription>
+        <value>* Information posted in this case may be open and accessible to all Intel employees without restriction as to their location or citizenship. Do not upload any technical data or documents that are subject to export restrictions without first obtaining Intel’s approval to accept such data. All defense, military intelligence, nuclear/biochemical or space related technical data, including ITAR-controlled information shall be specifically marked as such and should only be provided using secure communication methods approved in writing by Intel.  Please contact your Intel account owner for more details.  IPS is not approved for all export controlled data</value>
+    </labels>
+    <labels>
+        <fullName>CRM_Integration_User_ID</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CRM Integration User ID</shortDescription>
+        <value>005o0000001f02X</value>
+    </labels>
+    <labels>
+        <fullName>Core_Access_Request_Email_Subject</fullName>
+        <categories>Core_OpportunitySearch</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core Access Request Email Subject</shortDescription>
+        <value>Request for access to Opportunity</value>
+    </labels>
+    <labels>
+        <fullName>Core_Access_Request_Submitted</fullName>
+        <categories>Core_OpportunitySearch</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core Access Request Submitted</shortDescription>
+        <value>Request for Opportunity Access Submitted</value>
+    </labels>
+    <labels>
+        <fullName>Core_Account</fullName>
+        <categories>Channel Sales Search</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Account</shortDescription>
+        <value>Account</value>
+    </labels>
+    <labels>
+        <fullName>Core_AccountID</fullName>
+        <categories>Core_SalesSupportHomeController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_AccountID</shortDescription>
+        <value>AccId</value>
+    </labels>
+    <labels>
+        <fullName>Core_AccountMerge</fullName>
+        <categories>Core_AccountHandler</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AccountMerge Identifier</shortDescription>
+        <value>AccountMerge</value>
+    </labels>
+    <labels>
+        <fullName>Core_AccountName</fullName>
+        <categories>Core_SalesSupportHomeController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_AccountName</shortDescription>
+        <value>AccName</value>
+    </labels>
+    <labels>
+        <fullName>Core_Account_330_Executive_Access</fullName>
+        <categories>Account 330 Reports</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Account_330_Executive_Access</shortDescription>
+        <value>Core_Account_330_Executive_Access</value>
+    </labels>
+    <labels>
+        <fullName>Core_Account_ID_Name</fullName>
+        <categories>Core_SalesSupportHomeController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_Account ID Name</shortDescription>
+        <value>Account CIM ID</value>
+    </labels>
+    <labels>
+        <fullName>Core_Account_Name</fullName>
+        <categories>Core_SalesSupportHomeController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_Account Name</shortDescription>
+        <value>Account Name</value>
+    </labels>
+    <labels>
+        <fullName>Core_Account_Recomm_Access_Acct_Team</fullName>
+        <categories>Core_AccountRecommendations_Controller</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_Account_Recomm_Access_Acct_Team</shortDescription>
+        <value>Contact the Account Owner to be added to the Account Team.</value>
+    </labels>
+    <labels>
+        <fullName>Core_Account_Recomm_Access_Controlled</fullName>
+        <categories>Core_AccountRecommendations_Controller</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_Account_Recomm_Access_Controlled</shortDescription>
+        <value>Access to Account Recommendations is closely controlled.</value>
+    </labels>
+    <labels>
+        <fullName>Core_Account_Recomm_Feedback_Needed</fullName>
+        <categories>Core_AccountRecommendations_Controller</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_Account_Recomm_Feedback_Needed</shortDescription>
+        <value>Feedback Needed</value>
+    </labels>
+    <labels>
+        <fullName>Core_Account_Recomm_Feedback_Negative</fullName>
+        <categories>Core_AccountRecommendations_Controller</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_Account_Recomm_Feedback_Negative</shortDescription>
+        <value>Negative Feedback</value>
+    </labels>
+    <labels>
+        <fullName>Core_Account_Recomm_Feedback_Positive</fullName>
+        <categories>Core_AccountRecommendations_Controller</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_Account_Recomm_Feedback_Positive</shortDescription>
+        <value>Positive Feedback</value>
+    </labels>
+    <labels>
+        <fullName>Core_Account_Recomm_No_Recommendations</fullName>
+        <categories>Core_AccountRecommendations_Controller</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_Account_Recomm_No_Recommendations</shortDescription>
+        <value>Sorry, no recommendations are available for this account.</value>
+    </labels>
+    <labels>
+        <fullName>Core_Account_Role</fullName>
+        <categories>Core_LeadHandler</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core Account Role</shortDescription>
+        <value>Other</value>
+    </labels>
+    <labels>
+        <fullName>Core_Approved_Status</fullName>
+        <categories>Core_ChangeRequestHandler</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core Approved Status</shortDescription>
+        <value>Approved</value>
+    </labels>
+    <labels>
+        <fullName>Core_Back_To_Opportunity</fullName>
+        <categories>Core_OpportunityProduct</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core Back To Opportunity</shortDescription>
+        <value>« Back to Opportunity</value>
+    </labels>
+    <labels>
+        <fullName>Core_CCV_Customer_Value_High</fullName>
+        <categories>CCV</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CCV Customer Value High</shortDescription>
+        <value>1 - High</value>
+    </labels>
+    <labels>
+        <fullName>Core_CCV_Customer_Value_Low</fullName>
+        <categories>CCV</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CCV Customer Value Low</shortDescription>
+        <value>3 - Low</value>
+    </labels>
+    <labels>
+        <fullName>Core_CCV_Customer_Value_Medium</fullName>
+        <categories>CCV</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CCV Customer Value Medium</shortDescription>
+        <value>2 - Medium</value>
+    </labels>
+    <labels>
+        <fullName>Core_CIMID</fullName>
+        <categories>Core_SalesSupportHome</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core CIMID</shortDescription>
+        <value>aceAcctID</value>
+    </labels>
+    <labels>
+        <fullName>Core_CRM_Integration_User_ID</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CRM Integration User ID</shortDescription>
+        <value>005o0000001f02X</value>
+    </labels>
+    <labels>
+        <fullName>Core_Campaign_Approval_Field</fullName>
+        <categories>Campaign Values</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Campaign Approval Field ID</shortDescription>
+        <value>00N21000000Fou3</value>
+    </labels>
+    <labels>
+        <fullName>Core_Campaign_Batch_Process</fullName>
+        <categories>Core_CampaignTaskGeneration_Controller</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_Campaign_Batch_Process</shortDescription>
+        <value>Due to the volume of campaign members, a batch process has been kicked off to generate tasks for all of them. You will be notified via email when task generation is complete.</value>
+    </labels>
+    <labels>
+        <fullName>Core_Campaign_Default_Approval_Status</fullName>
+        <categories>Campaign Values</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Campaign Default Approval Status</shortDescription>
+        <value>Pending</value>
+    </labels>
+    <labels>
+        <fullName>Core_Campaign_Default_Status</fullName>
+        <categories>Campaign Values</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Campaign Default Status</shortDescription>
+        <value>Planned</value>
+    </labels>
+    <labels>
+        <fullName>Core_Campaign_Not_Approved_And_In_Progress</fullName>
+        <categories>Core_CampaignTaskGeneration_Controller</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_Campaign_Not_Approved_And_In_Progress</shortDescription>
+        <value>Tasks cannot be generated unless the campaign is Approved and In Progress.</value>
+    </labels>
+    <labels>
+        <fullName>Core_Campaign_Sales_Record_Type</fullName>
+        <categories>Core_CampaignMember</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_Campaign_Sales_Record_Type</shortDescription>
+        <value>Core_Sales_Campaign</value>
+    </labels>
+    <labels>
+        <fullName>Core_Campaign_Task_Description</fullName>
+        <categories>Core_CampaignTaskGeneration_Controller</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_Campaign_Task_Description</shortDescription>
+        <value>Click the Call Script button at the top of this task to launch the questions in the script</value>
+    </labels>
+    <labels>
+        <fullName>Core_Campaign_Task_Not_Started</fullName>
+        <categories>Core_CampaignTaskGeneration_Controller</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_Campaign_Task_Not_Started</shortDescription>
+        <value>Not Started</value>
+    </labels>
+    <labels>
+        <fullName>Core_Campaign_Task_Record_Type</fullName>
+        <categories>Core_CampaignTaskGeneration_Controller</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_Campaign_Task_Record_Type</shortDescription>
+        <value>Core_Sales_Campaign_Task</value>
+    </labels>
+    <labels>
+        <fullName>Core_Campaign_Task_Type</fullName>
+        <categories>Core_CampaignTaskGeneration_Controller</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_Campaign_Task_Type</shortDescription>
+        <value>Customer Call</value>
+    </labels>
+    <labels>
+        <fullName>Core_Campaign_Tasks_Already_Generated</fullName>
+        <categories>Core_CampaignTaskGeneration_Controller</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_Campaign_Tasks_Already_Generated</shortDescription>
+        <value>Tasks have already been generated for this campaign. To generate them again, you must first cancel the campaign.</value>
+    </labels>
+    <labels>
+        <fullName>Core_Campaign_Tasks_Assignees</fullName>
+        <categories>Core_CampaignTaskGeneration_Controller</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_Campaign_Tasks_Assignees</shortDescription>
+        <value>users were assigned these tasks.</value>
+    </labels>
+    <labels>
+        <fullName>Core_Campaign_Tasks_Generated</fullName>
+        <categories>Core_CampaignTaskGeneration_Controller</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_Campaign_Tasks_Generated</shortDescription>
+        <value>tasks were generated.</value>
+    </labels>
+    <labels>
+        <fullName>Core_Campaign_Too_Many_Tasks</fullName>
+        <categories>Core_CampaignTaskGeneration_Controller</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_Campaign_Too_Many_Tasks</shortDescription>
+        <value>A maximum of 50,000 tasks can be generated for a campaign. Amount of tasks is equal to the number of campaign members multiplied by number of activity types. For successful task generation, please reduce either the campaign members or activity types on this campaign.</value>
+    </labels>
+    <labels>
+        <fullName>Core_Cancel_Button</fullName>
+        <categories>Core_OpportunityProduct</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_Cancel_Button</shortDescription>
+        <value>Cancel</value>
+    </labels>
+    <labels>
+        <fullName>Core_Change_Request</fullName>
+        <categories>Core_ChangeRequestHandler</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core Change Request</shortDescription>
+        <value>Core_Change_Request__c</value>
+    </labels>
+    <labels>
+        <fullName>Core_Channel_Data_Search</fullName>
+        <categories>Salesout Search</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Channel Data Search</shortDescription>
+        <value>Channel Data Search</value>
+    </labels>
+    <labels>
+        <fullName>Core_Closed_Status_Oppty</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_Closed_Status_Oppty</shortDescription>
+        <value>Lost,Cancelled,Production Win,Design Win</value>
+    </labels>
+    <labels>
+        <fullName>Core_Commissionable_Transaction_Approved_Status</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Commissionable Transaction Approved Status</shortDescription>
+        <value>Approved</value>
+    </labels>
+    <labels>
+        <fullName>Core_Commissionable_Transaction_Milestone_Approved_Status</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Commissionable Transaction Milestone Approved Status</shortDescription>
+        <value>Approved</value>
+    </labels>
+    <labels>
+        <fullName>Core_Commissionable_Transaction_OP_Approved_Status</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Commissionable Transaction Opportunity Product Approved Status</shortDescription>
+        <value>Win Approved</value>
+    </labels>
+    <labels>
+        <fullName>Core_CountryCode</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core CountryCode</shortDescription>
+        <value>CountryCode</value>
+    </labels>
+    <labels>
+        <fullName>Core_Create_and_Edit_Campaign_Permission_Set_Name</fullName>
+        <categories>Channel Data</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Create and Edit Campaign Permission Set Name</shortDescription>
+        <value>Core_Create_and_Edit_Campaigns</value>
+    </labels>
+    <labels>
+        <fullName>Core_CustCommunityPlusUserType</fullName>
+        <categories>SFDC User Type</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_CustCommunityPlusUserType</shortDescription>
+        <value>PowerCustomerSuccess</value>
+    </labels>
+    <labels>
+        <fullName>Core_Data_Ops_Profile_Name</fullName>
+        <categories>Opportunity Validation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Data Ops Profile Name</shortDescription>
+        <value>Data Ops</value>
+    </labels>
+    <labels>
+        <fullName>Core_DateShipped</fullName>
+        <categories>Core_SalesSupportHome</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_SalesSupportHome</shortDescription>
+        <value>Date Shipped</value>
+    </labels>
+    <labels>
+        <fullName>Core_DealSupportViewTitle</fullName>
+        <categories>Core_DealSupportHomeController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core DealSupportViewTitle</shortDescription>
+        <value>Deal Support Home</value>
+    </labels>
+    <labels>
+        <fullName>Core_Deal_Support</fullName>
+        <categories>Core_DealSupportHome</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core Deal Support</shortDescription>
+        <value>Deal Support</value>
+    </labels>
+    <labels>
+        <fullName>Core_Deleted_Product_Status</fullName>
+        <categories>Core_OpportunityLineItemHandler</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Deleted Product Status</shortDescription>
+        <value>Deleted</value>
+    </labels>
+    <labels>
+        <fullName>Core_DeliverStatus</fullName>
+        <categories>Core_SalesSupportHome</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Delivery Status</shortDescription>
+        <value>Delivery Status</value>
+    </labels>
+    <labels>
+        <fullName>Core_DemoDepotOrder</fullName>
+        <categories>Core_SalesSupportHomeController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_DemoDepotOrder</shortDescription>
+        <value>Demo Depot Order Placement</value>
+    </labels>
+    <labels>
+        <fullName>Core_DemoDepotOrderManagement</fullName>
+        <categories>Core_SalesSupportHomeController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_DemoDepotOrderManagement</shortDescription>
+        <value>Demo Depot Order Management</value>
+    </labels>
+    <labels>
+        <fullName>Core_DemoDepotOrderNo</fullName>
+        <categories>Core_DealSupportHomeController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_DemoDepotOrderNo</shortDescription>
+        <value>Demo Depot Order #</value>
+    </labels>
+    <labels>
+        <fullName>Core_Duplicate_Contact_Error</fullName>
+        <categories>Core_Contact</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_Duplicate_Contact_Error</shortDescription>
+        <value>A duplicate contact records exists with the email id that you have specified. Please use the existing contact record or use another email address.</value>
+    </labels>
+    <labels>
+        <fullName>Core_Duplication_Opportunity_Name</fullName>
+        <categories>Core_OpportunityHandler</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core Duplication Opportunity Name</shortDescription>
+        <value>There is an opportunity with a duplicate name in the system.  Please revise the opportunity name.</value>
+    </labels>
+    <labels>
+        <fullName>Core_Edit_Permission</fullName>
+        <categories>Core_ChangeRequestHandler</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core Edit Permission</shortDescription>
+        <value>Edit</value>
+    </labels>
+    <labels>
+        <fullName>Core_Email_Limit_Reached</fullName>
+        <categories>Core_OpportunitySearch</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core Email Limit Reached</shortDescription>
+        <value>Limit reached for sending request. Please click on search and send requests.</value>
+    </labels>
+    <labels>
+        <fullName>Core_Email_Template_1</fullName>
+        <categories>Email Message</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core Email Template 1</shortDescription>
+        <value>Dear</value>
+    </labels>
+    <labels>
+        <fullName>Core_Email_Template_2</fullName>
+        <categories>Email Message</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core Email Template 2</shortDescription>
+        <value>has requested you to provide access to an Opportunity record. 
+Please click</value>
+    </labels>
+    <labels>
+        <fullName>Core_Email_Template_3</fullName>
+        <categories>Email Message</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core Email Template 3</shortDescription>
+        <value>to view that record. 
+
+Thanks and Regards,</value>
+    </labels>
+    <labels>
+        <fullName>Core_Email_Template_Part1</fullName>
+        <categories>Core_OpportunitySearch</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core Email Template Part1</shortDescription>
+        <value>Dear</value>
+    </labels>
+    <labels>
+        <fullName>Core_Email_Template_Part2</fullName>
+        <categories>Core_OpportunitySearch</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core Email Template Part2</shortDescription>
+        <value>has requested you to provide access to an Opportunity record. 
+Please click</value>
+    </labels>
+    <labels>
+        <fullName>Core_Email_Template_Part3</fullName>
+        <categories>Core_OpportunitySearch</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core Email Template Part3</shortDescription>
+        <value>to view the record.</value>
+    </labels>
+    <labels>
+        <fullName>Core_Employee_Type</fullName>
+        <categories>Core_OpportunitySearch</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core Employee Type</shortDescription>
+        <value>EMP</value>
+    </labels>
+    <labels>
+        <fullName>Core_EnterValue</fullName>
+        <categories>Core_SalesSupportHome</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_SalesSupportHome</shortDescription>
+        <value>Enter a value</value>
+    </labels>
+    <labels>
+        <fullName>Core_EstimatedShipDate</fullName>
+        <categories>Core_DealSupportHome</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_DealSupportHome</shortDescription>
+        <value>Estimated Ship Date</value>
+    </labels>
+    <labels>
+        <fullName>Core_Exception</fullName>
+        <categories>Exception</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core Exception</shortDescription>
+        <value>An error has occured. Please contact System Administrator for more details.</value>
+    </labels>
+    <labels>
+        <fullName>Core_Exception_Field_Message</fullName>
+        <categories>Exception</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Exception Field Message</shortDescription>
+        <value>Lead fields that affected this error:</value>
+    </labels>
+    <labels>
+        <fullName>Core_Global_Export_Compliance_Profile_Name</fullName>
+        <categories>Opportunity Validation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Global Export Compliance Profile Name</shortDescription>
+        <value>Global Export Compliance</value>
+    </labels>
+    <labels>
+        <fullName>Core_HTML_Line_Break</fullName>
+        <categories>Core_OpportunitySearch</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>HTML Line Break</shortDescription>
+        <value>&lt;br&gt;</value>
+    </labels>
+    <labels>
+        <fullName>Core_HTML_Link_End</fullName>
+        <categories>Core_OpportunitySearch</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>HTML Link End</shortDescription>
+        <value>&quot;&gt; here &lt;/a&gt;</value>
+    </labels>
+    <labels>
+        <fullName>Core_HTML_Link_Start</fullName>
+        <categories>Core_OpportunitySearch</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>HTML Link Start</shortDescription>
+        <value>&lt;a href=&quot;</value>
+    </labels>
+    <labels>
+        <fullName>Core_ID</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core ID</shortDescription>
+        <value>ID</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPSCustCommunityPlusProfiles</fullName>
+        <categories>IPS Customer Community Plus Profiles</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_IPSCustCommunityPlusProfiles</shortDescription>
+        <value>IPS External Contact</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_Agent_Admin_Profile_Names</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core IPS Agent/Admin Profile Names</shortDescription>
+        <value>IPS Agent,IPS Agent Enhanced,IPS Support Org Admin</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_Asset_Recordtype_Id</fullName>
+        <categories>IPS, IPS Project, IPS Project Product, MAP, Product Access</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>This holds the Asset Record Type values for IPS related Assets</shortDescription>
+        <value>012210000004IPF</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_Button_Override_ITAdmins</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IPS Button Override-Org Admin</shortDescription>
+        <value>System Administrator,IT Admin,Production Support</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_CaseRTF_Color_External</fullName>
+        <categories>Case RTF</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>This holds the value for the External Case Comments Color</shortDescription>
+        <value>background-color:#e3f3ff</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_CaseRTF_Color_Internal</fullName>
+        <categories>Case RTF</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>This holds the value for the Internal Case Comments Color</shortDescription>
+        <value>background-color:  #EEEEEE</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_CaseRTF_Notetype_DataMigration</fullName>
+        <categories>Case RTF</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>This holds the value for the Case Comments NoteType if created  by DataMigration</shortDescription>
+        <value>Imported Case Note</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_CaseRTF_Notetype_External</fullName>
+        <categories>Case RTF</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>This holds the value for the External Case Comments NoteType - public</shortDescription>
+        <value>Note From Customer</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_CaseRTF_Notetype_InternalPrivate</fullName>
+        <categories>Case RTF</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>This holds the value for the Internal Case Comments NoteType when private</shortDescription>
+        <value>Internal Note</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_CaseRTF_Notetype_InternalPublic</fullName>
+        <categories>Case RTF</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>This holds the value for the Internal Case Comments NoteType when public</shortDescription>
+        <value>Note To Customer</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_Case_Creation_Alert_Message</fullName>
+        <categories>Alerts</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IPS Case Creation Alert Message</shortDescription>
+        <value>Thank you for contacting Intel Premier Support, Your case was successfully submitted</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_Case_Q_Exclude_Asgnmt_Email</fullName>
+        <categories>IPS, Case, Assignment, Email</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IPS Case Q Exclude Assignment Notifications</shortDescription>
+        <value>00G21000000IMgh</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_Case_RecordType_Name</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_IPS_Case_RecordType_Name</shortDescription>
+        <value>IPS Case Create;IPS No Assigned Contact Case;IPS Closed Case;IPS GEC ReadOnly</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_CustCommPlus_UserType</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IPS CustCommPlus UserType</shortDescription>
+        <value>PowerCustomerSuccess</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_DataMigration_ProfileName</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IPS DataMigration ProfileName</shortDescription>
+        <value>IPS Data Migration</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_Data_Migration_Profile_Name</fullName>
+        <categories>Case RTF</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Data Migration Profile Name</shortDescription>
+        <value>IPS Data Migration</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_Data_Ops_Profile_Name</fullName>
+        <categories>Case RTF</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Data Ops Profile Name</shortDescription>
+        <value>Data Ops</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_EmailOptIn</fullName>
+        <categories>Preferences, Home Page Links</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Display messages on the Email Opt VF page</shortDescription>
+        <value>You are currently Opted In to receive emails from Intel Premier Support. Check the box below to Opt Out.</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_EmailOptMessage</fullName>
+        <categories>Preferences, Home Page Links</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Message to be Displayed on the Email Opt IN/OUT page</shortDescription>
+        <value>On this page you can Opt In or Out of Intel Premier Support email communication. By Opting In you are agreeing that Intel will notify you when a Case has been: Create, Updated, Closed, Reopened or had an Attachment. You will also be notified if a File has been made available for you to download. By Opting Out you will receive no email communication except for when a Case you are working on has been Closed.</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_EmailOptOut</fullName>
+        <categories>Preferences, Home Page Links</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Display messages on the Email Opt VF page</shortDescription>
+        <value>You are currently Opted Out from receiving emails from Intel Premier Support. Check the box below to Opt In.</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_EmailPreferences_SecHeader</fullName>
+        <categories>Preferences</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>This holds the name of Email section of Preferences page</shortDescription>
+        <value>Email Preferences</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_Escalate_Profile_List</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core IPS Escalate Profile List</shortDescription>
+        <value>IPS Agent;Sales Rep-BB;Sales Manager;Sales Rep-CW</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_External_Customer_Profile_Id</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core IPS External Customer Profile Id</shortDescription>
+        <value>00e21000000QGou</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_FAE_ProfileName</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IPS FAE ProfileNames</shortDescription>
+        <value>Sales Rep-BB;Sales Rep-CW;Sales Manager</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_File_AdmnFlUpldPgListView</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IPS_File_AdmnFlUpldPgListView</shortDescription>
+        <value>Completed/In-Process File Uploads</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_File_AdmnFlUpldPgRpt</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IPS_File_AdmnFlUpldPgRpt</shortDescription>
+        <value>File Upload Report Links</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_File_AdmnFlUpldPgRptAAF</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IPS_File_AdmnFlUpldPgRptAAF</shortDescription>
+        <value>File Assignment List Views</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_File_AdmnFlUpldPgRptAAFId</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IPS_File_AdmnFlUpldPgRptAAFId</shortDescription>
+        <value>Search Files</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_File_AdmnFlUpldPgSCFTLnk</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IPS_File_AdmnFlUpldPgSCFTLnk</shortDescription>
+        <value>Upload New Files</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_File_AdmnFlUpldPgStrmMsg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IPS_File_AdmnFlUpldPgStrmMsg</shortDescription>
+        <value>&apos;Upload New Files&apos; in a new Window and check progress of your uploads here. No need to Refresh this Page</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_File_AdmnFlUpldPgTitle</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IPS_File_AdmnFlUpldPgTitle</shortDescription>
+        <value>Streaming File Uploads</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_File_AssignListPgSize</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IPS_File_AssignListPgSize</shortDescription>
+        <value>100</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_File_AssignSPAccount_Page_PBTitle</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_IPS_File_AssignSPAccount_Page_PBTitle</shortDescription>
+        <value>Assign Supported Products and Accounts to IPS File</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_File_Auth_Pass</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IPS File Auth ByPass Profile Names</shortDescription>
+        <value>System Administrator,IT Admin,IPS Agent,IPS Agent Enhanced,IPS Support Org Admin,Cloud CRM BSA-Pre Prod</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_File_CSAttachPgMsg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IPS_File_CSAttachPgMsg</shortDescription>
+        <value>In case you decide to Upload Files, please do not &apos;Return to Case&apos; until the Upload Progress bar shows 100% completion</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_File_CSAttachPgRetBtnMsg</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IPS_File_CSAttachPgRetBtnMsg</shortDescription>
+        <value>Please press the Refresh Attachment button if you do not see your new Attachment on the Case page</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_File_CSAttachPgRetBtnTxt</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IPS_File_CSAttachPgRetBtnTxt</shortDescription>
+        <value>Return to Case</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_File_ExtDownlNotif_Email_Templ</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IPS File ExtDownlNotif Email Templ</shortDescription>
+        <value>Core_IPS_File_External_Download_Available</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_File_List_MaxSize</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IPS File List MaxSize</shortDescription>
+        <value>200</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_File_SCFT_URL</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IPS File SCFT URL</shortDescription>
+        <value>https://ips-scft-dev.intel.com/ips/upload</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_GECRecordTypeName</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>This is used to change the name of the GEC Record Type in AddComments VF page</shortDescription>
+        <value>IPS GEC ReadOnly</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_Inactive_Intel_Product_Message</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Inactive Intel Product Message</shortDescription>
+        <value>You cannot create a new case for an inactive Intel Product.</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_Insufficient_Privileges_MAP</fullName>
+        <categories>IPS, MAP, Product Access</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Insufficient Privileges Messages on MAP</shortDescription>
+        <value>Insufficient Privileges:  You must be a Support Org Admin for this Support Org to access this page.</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_Insufficient_Privileges_PAR</fullName>
+        <categories>IPS, PAR, Product Access</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Insufficient Privileges Messages on PAR</shortDescription>
+        <value>Insufficient Privileges:  You must be an Account Team member with Case:READ or Case: READ/WRITE permission to access this page.</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_Interested_Parties_Internal_Admin</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Interested Parties IPS Admin</shortDescription>
+        <value>IPS Support Org Admin</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_Interested_Parties_Internal_Agent</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Interested Parties IPS Agent</shortDescription>
+        <value>IPS Agent</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_Interested_Parties_Internal_ExternalCustomer</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Interested Parties ExternalCustomer</shortDescription>
+        <value>IPS External Customer</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_Load_gif_Text</fullName>
+        <categories>IPS, PAR, Product Access</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>This is used to display the message when the loading animation is displayed</shortDescription>
+        <value>Please wait for Results</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_Next_Response_Due_Default_in_Minutes</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core IPS Next Response Due Default in Minutes</shortDescription>
+        <value>960</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_Non_IPS_Active_PAR</fullName>
+        <categories>IPS, PAR, Product Access</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Non IPS Active Messages on PAR</shortDescription>
+        <value>This account is not enabled for IPS.   You may only create a Product Access Request for accounts that are enabled for IPS.</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_OptIn</fullName>
+        <categories>Preferences, Home Page Links</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Text to be displayed to Opt In</shortDescription>
+        <value>Yes, Opt In</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_OptOut</fullName>
+        <categories>Preferences, Home Page Links</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Text to be displayed to Opt In</shortDescription>
+        <value>Yes, Opt Out</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_OrgAdmin_Profile_ID</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IPS OrgAdmin Profile ID</shortDescription>
+        <value>00e21000000Lqqk</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_Org_Wide_Email_Display_Name</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IPS Org-Wide Email Display Name</shortDescription>
+        <value>Intel Premier Support</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_PARPage_PicklistNote</fullName>
+        <categories>IPS, PAR, Product Access</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>This holds the message to be displayed to indicate the highlighted picklists</shortDescription>
+        <value>Highlighted drop-downs indicate there are multiple values. Please select the drop-down value that best aligns to your product application.</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_Pending_PAR_Report_ID</fullName>
+        <categories>PAR, IPS</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IPS Pending PAR Report ID</shortDescription>
+        <value>00O21000000SFke</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_Pending_PAR_Report_URL</fullName>
+        <categories>IPS,PAR</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IPS PAR Pending Report URL</shortDescription>
+        <value>shninteldevrfsh2crm.inteldev.shnpoc.net/00O21000000SFke</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_PreferencesMessage_SecHeader</fullName>
+        <categories>Preferences</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>This holds the name of message section of Preferences page</shortDescription>
+        <value>Please read the following</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_Profile_Name</fullName>
+        <categories>Case RTF</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>External Customer Profile Name</shortDescription>
+        <value>IPS External Customer</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_Profiles_AddAccountPrevention</fullName>
+        <categories>IPS Project, IPS Project Account</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>This is to prevent Users of the following profiles to add Accounts</shortDescription>
+        <value>Sales Rep-BB;IPS Agent;Sales Ops;Sales Manager;Sales Rep-BB-Dual IPS;Sales Rep-CW;Data Ops</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_ProjAccount_ProfileSet</fullName>
+        <categories>IPS Project, IPS Project Account</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>This is a set of all profiles for checking Acc Association on AddAccounts page</shortDescription>
+        <value>Sales Rep-BB;Data Ops;Sales Manager;Sales Ops;Sales Rep-BB-Dual IPS;Sales Rep-CW</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_ProjProduct_RecType_Approval</fullName>
+        <categories>IPS Project, IPS Project Product</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Record type for IPS ProjectProduct(Approval)</shortDescription>
+        <value>01221000000CgVA</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_ProjProduct_RecType_NonApproval</fullName>
+        <categories>IPS Project, IPS Project Product</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Record type for IPS ProjectProduct(Non Approval)</shortDescription>
+        <value>01221000000CgVF</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_Project_After_Submit</fullName>
+        <categories>IPS Project, Header</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Record type for IPS Project(After Submit)</shortDescription>
+        <value>01221000000CgVU</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_Project_Before_Submit</fullName>
+        <categories>IPS Project, Header</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Record type for IPS Project(Before Submit)</shortDescription>
+        <value>012210000004IHW</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_QUERY_SLAFirstResponseMilestone</fullName>
+        <categories>IPS Queries</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_IPS_QUERY_SLAFirstResponseMilestone</shortDescription>
+        <value>select Id,name from MilestoneType where name = &apos;First Response SLA Target&apos; limit 1</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_QUERY_SLANextResponseMilestone</fullName>
+        <categories>IPS Queries</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_IPS_QUERY_SLANextResponseMilestone</shortDescription>
+        <value>select Id,name from MilestoneType where name = &apos;Core Next Response SLA Independent&apos; limit 1</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_QUERY_SLA_FirstResponse_Milestone</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IPS QUERY SLA FirstResponse Milestone</shortDescription>
+        <value>select Id,name from MilestoneType where name = &apos;IPS Case First Response&apos; limit 1</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_QUERY_SLA_Next_Response_Milestone</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IPS QUERY SLA Next Response Milestone</shortDescription>
+        <value>select Id,name from MilestoneType where name = &apos;IPS Case Next Response&apos; limit 1</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_RDC_File_Download_URL</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core IPS RDC File Download URL</shortDescription>
+        <value>https://www-ssl.intel.com/content/www/us/en/secure/design/confidential/software/downloads.html</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_RecordType_Names</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_IPS_RecordType_Names</shortDescription>
+        <value>IPS Case Create;IPS No Assigned Contact Case;IPS Case Read Only;IPS Closed Case;IPS Closed Case;Core_Asset_IPS_Asset;Case comment;IPS Project Product(Approval);IPS Project Product(Basic);IPS Support Org</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_Sales_Manager_Profile_Name</fullName>
+        <categories>Case RTF</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Sales Manager Profile Name</shortDescription>
+        <value>Sales Manager</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_Sales_Ops_Profile_Name</fullName>
+        <categories>Case RTF</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Sales Ops Profile Name</shortDescription>
+        <value>Sales Ops</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_Sales_Profile_List</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core IPS Sales Profile List</shortDescription>
+        <value>Sales Manager,Sales Ops,Sales Rep-BB,Sales Rep-CW</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_Sales_Profiles</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Sales Profiles</shortDescription>
+        <value>Sales Rep-BB;Sales Rep-BB-Dual IPS;Sales Rep-CW;Sales Manager</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_Sales_RepBBDual_Profile_Name</fullName>
+        <categories>Case RTF</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Sales Rep-BB-Dual IPS</shortDescription>
+        <value>Sales Rep-BB-Dual IPS</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_Sales_RepBB_Profile_Name</fullName>
+        <categories>Case RTF</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Sales Rep BB Profile Name</shortDescription>
+        <value>Sales Rep-BB</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_Sales_RepCW_Profile_Name</fullName>
+        <categories>Case RTF</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Sales Rep-CW</shortDescription>
+        <value>Sales Rep-CW</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_Substatus_Set</fullName>
+        <categories>Case RTF;Case</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>This holds the set of sub status values for Case used for Case RTF trigger</shortDescription>
+        <value>Waiting for Ingredient,Waiting for Customer Clarification*,Waiting for Customer Verification*</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_TimeZoneMessage</fullName>
+        <categories>Preferences, Home Page Links</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>This is to display message to users to change their time zone</shortDescription>
+        <value>The date/time information on the cases will be displayed in the timezone below. You can update your settings here.</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_TimeZone_SecHeader</fullName>
+        <categories>Preferences</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>This holds the name of TimeZone section of Preferences page</shortDescription>
+        <value>Please set your local TimeZone here</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_User_Admin</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IPS User Admin</shortDescription>
+        <value>Admin</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_User_External</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IPS User External</shortDescription>
+        <value>Customer</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_WriteFieldName</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>WriteFieldName Label for JSON Format</shortDescription>
+        <value>Env Dtl Resp</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_WriteStringfield_Question</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>WriteStringField Label for Question</shortDescription>
+        <value>Qstn</value>
+    </labels>
+    <labels>
+        <fullName>Core_IPS_WriteStringfield_Response</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>WriteStringField Label for Response</shortDescription>
+        <value>Ansr</value>
+    </labels>
+    <labels>
+        <fullName>Core_IT_Admin_Profile_Name</fullName>
+        <categories>Advanced Access</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IT Admin Profile Name</shortDescription>
+        <value>IT Admin</value>
+    </labels>
+    <labels>
+        <fullName>Core_Inactive_Account_Owner</fullName>
+        <categories>Core_ChangeRequestHandler</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Inactive Account Owner</shortDescription>
+        <value>The Account Owner for the account is Inactive in Salesforce.</value>
+    </labels>
+    <labels>
+        <fullName>Core_IntegrationUser</fullName>
+        <categories>Test Classes</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core IntegrationUser</shortDescription>
+        <value>Integration</value>
+    </labels>
+    <labels>
+        <fullName>Core_Integration_Profile_Id</fullName>
+        <categories>Account Workflow</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_Integration Profile Id</shortDescription>
+        <value>00eo0000000TVUC</value>
+    </labels>
+    <labels>
+        <fullName>Core_Integration_Profile_Name</fullName>
+        <categories>Account Workflow</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Integration Profile Name</shortDescription>
+        <value>Integration</value>
+    </labels>
+    <labels>
+        <fullName>Core_IntelNetworkError</fullName>
+        <categories>Core_SalesSupportHome</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_IntelNetworkError</shortDescription>
+        <value>An error has occured. Please make sure you are on the Intel network</value>
+    </labels>
+    <labels>
+        <fullName>Core_IntelPlatform</fullName>
+        <categories>Core_OpportunityDescriptiveFeature</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_IntelPlatform</shortDescription>
+        <value>Intel Platform</value>
+    </labels>
+    <labels>
+        <fullName>Core_Intel_Network_Resource</fullName>
+        <categories>Core_DealSupportHome</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_Intel_Network_Resource</shortDescription>
+        <value>https://cloudcrmtrng.amr.corp.intel.com</value>
+    </labels>
+    <labels>
+        <fullName>Core_ItemsSent</fullName>
+        <categories>Core_SalesSupportHomeController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_SalesSupportHome</shortDescription>
+        <value>Items Sent</value>
+    </labels>
+    <labels>
+        <fullName>Core_Lead</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_Lead</shortDescription>
+        <value>lead</value>
+    </labels>
+    <labels>
+        <fullName>Core_LeadStatusSalesAcceptedLead</fullName>
+        <categories>Lead Status used in Core_Utility</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_LeadStatusSalesAcceptedLead</shortDescription>
+        <value>Sales Accepted Lead</value>
+    </labels>
+    <labels>
+        <fullName>Core_LeadStatusSalesQualifiedLead</fullName>
+        <categories>Lead Status Used in Core_Utility</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_LeadStatusSalesQualifiedLead</shortDescription>
+        <value>Sales Qualified Lead</value>
+    </labels>
+    <labels>
+        <fullName>Core_MAG_Intro</fullName>
+        <categories>Core_MAGQuestionnaireController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_MAG_Intro</shortDescription>
+        <value>Please answer the questions below immediately to initiate the GEC review and enable this opportunity to move forward in the cycle. It takes several days to complete the review and in some cases the GEC team will come back with requests for additional information. The opportunity may not be submitted for approval until the review is complete and the GEC Team is able to determine whether the hold may be removed, so please answer any follow up questions quickly.</value>
+    </labels>
+    <labels>
+        <fullName>Core_MAG_Number_of_Questions</fullName>
+        <categories>Core_MAGQuestionnaireController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_MAG_Number_of_Questions</shortDescription>
+        <value>6</value>
+    </labels>
+    <labels>
+        <fullName>Core_MAG_Outtro</fullName>
+        <categories>Core_MAGQuestionnaireController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_MAG_Outtro</shortDescription>
+        <value>Please refer to ‘Doing Business with Military, Aerospace &amp; Government (MAG) Customers – Guidelines’ document for guidance on how to engage with your customer(s) in an ITAR Compliant manner while the GEC review is in progress: &lt;a href=&quot;https://sp2010.amr.ith.intel.com/sites/gec/_layouts/DocIdRedir.aspx?ID=INTEL-5-104&quot; target=&quot;_blank&quot;&gt;https://sp2010.amr.ith.intel.com/sites/gec/_layouts/DocIdRedir.aspx?ID=INTEL-5-104&lt;/a&gt;.
+&lt;p/&gt;
+Please refer to ‘Export of Defense Services’ for more details: 
+&lt;a href=&quot;https://sp2010.amr.ith.intel.com/sites/gec/SitePages/Defense%20Services.aspx&quot; target=&quot;_blank&quot;&gt;https://sp2010.amr.ith.intel.com/sites/gec/SitePages/Defense%20Services.aspx&lt;/a&gt;
+&lt;p/&gt;
+You may be contacted by a representative from the Global Export Compliance team for more details.</value>
+    </labels>
+    <labels>
+        <fullName>Core_MAG_Q1</fullName>
+        <categories>Core_MAGQuestionnaireController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_MAG_Q1</shortDescription>
+        <value>1. Will the Intel item be incorporated into, or used in, any of the following? (Select all that apply)
+&lt;ol&gt;
+&lt;li&gt;Military end-item or application&lt;/li&gt;
+&lt;li&gt;Defense article&lt;/li&gt;
+&lt;li&gt;Unmanned (or optionally manned) aerial vehicle&lt;/li&gt;
+&lt;li&gt;Weapon System&lt;/li&gt;
+&lt;li&gt;Intelligence system or application&lt;/li&gt;
+&lt;li&gt;Rocket&lt;/li&gt;
+&lt;li&gt;Space-related item&lt;/li&gt;
+&lt;li&gt;Satellite&lt;/li&gt;
+&lt;li&gt;Nuclear-related item&lt;/li&gt;
+&lt;li&gt;Chemical / Biological Weapons or Precursors&lt;/li&gt;
+&lt;li&gt;US Government Classified item or application&lt;/li&gt;
+&lt;li&gt;Non-US Government Classified item or application&lt;/li&gt;
+&lt;li&gt;None of the above (the end-use is civilian / non-military)&lt;/li&gt;
+&lt;/ol&gt;</value>
+    </labels>
+    <labels>
+        <fullName>Core_MAG_Q10</fullName>
+        <categories>Core_MAGQuestionnaireController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_MAG_Q10</shortDescription>
+        <value>(placeholder for future use)</value>
+    </labels>
+    <labels>
+        <fullName>Core_MAG_Q10_Textbox</fullName>
+        <categories>Core_MAGQuestionnaireController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_MAG_Q10_Textbox</shortDescription>
+        <value>(placeholder for future use)</value>
+    </labels>
+    <labels>
+        <fullName>Core_MAG_Q11</fullName>
+        <categories>Core_MAGQuestionnaireController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_MAG_Q11</shortDescription>
+        <value>(placeholder for future use)</value>
+    </labels>
+    <labels>
+        <fullName>Core_MAG_Q11_Textbox</fullName>
+        <categories>Core_MAGQuestionnaireController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_MAG_Q11_Textbox</shortDescription>
+        <value>(placeholder for future use)</value>
+    </labels>
+    <labels>
+        <fullName>Core_MAG_Q12</fullName>
+        <categories>Core_MAGQuestionnaireController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_MAG_Q12</shortDescription>
+        <value>(placeholder for future use)</value>
+    </labels>
+    <labels>
+        <fullName>Core_MAG_Q12_Textbox</fullName>
+        <categories>Core_MAGQuestionnaireController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_MAG_Q12_Textbox</shortDescription>
+        <value>(placeholder for future use)</value>
+    </labels>
+    <labels>
+        <fullName>Core_MAG_Q1_Textbox</fullName>
+        <categories>Core_MAGQuestionnaireController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_MAG_Q1_Textbox</shortDescription>
+        <value>Please enter all that apply</value>
+    </labels>
+    <labels>
+        <fullName>Core_MAG_Q2</fullName>
+        <categories>Core_MAGQuestionnaireController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_MAG_Q2</shortDescription>
+        <value>2. Does this project involve ONLY Intel commercial-off-the-shelf (COTS) products with existing SKUs, no separate BINs, and which will not be changed/developed, modified, or enhanced in any way?
+&lt;ul&gt;&lt;li&gt;If No, describe/explain.&lt;/li&gt;&lt;/ul&gt;</value>
+    </labels>
+    <labels>
+        <fullName>Core_MAG_Q2_Textbox</fullName>
+        <categories>Core_MAGQuestionnaireController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_MAG_Q2_Textbox</shortDescription>
+        <value>Please answer YES or NO.  If No, describe/explain.</value>
+    </labels>
+    <labels>
+        <fullName>Core_MAG_Q3</fullName>
+        <categories>Core_MAGQuestionnaireController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_MAG_Q3</shortDescription>
+        <value>3. Will Intel provide any technical support (including both hardware and software support) (e.g. design-in, co-development solutions, design reviews, schematic reviews, layout reviews, troubleshooting, fixing bugs, software optimization, hardware integration, analysis testing, etc.)?
+&lt;ul&gt;&lt;li&gt;If Yes, describe planned/anticipated technical support.&lt;/li&gt;&lt;/ul&gt;</value>
+    </labels>
+    <labels>
+        <fullName>Core_MAG_Q3_Textbox</fullName>
+        <categories>Core_MAGQuestionnaireController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_MAG_Q3_Textbox</shortDescription>
+        <value>Please answer YES or NO.  If Yes, describe planned/anticipated technical support.</value>
+    </labels>
+    <labels>
+        <fullName>Core_MAG_Q4</fullName>
+        <categories>Core_MAGQuestionnaireController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_MAG_Q4</shortDescription>
+        <value>4. Will Intel provide any interactive or unique training to this customer?
+&lt;ul&gt;&lt;li&gt;If Yes, describe planned/anticipated training.&lt;/li&gt;&lt;/ul&gt;</value>
+    </labels>
+    <labels>
+        <fullName>Core_MAG_Q4_Textbox</fullName>
+        <categories>Core_MAGQuestionnaireController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_MAG_Q4_Textbox</shortDescription>
+        <value>Please answer YES or NO.  If Yes, describe planned/anticipated training.</value>
+    </labels>
+    <labels>
+        <fullName>Core_MAG_Q5</fullName>
+        <categories>Core_MAGQuestionnaireController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_MAG_Q5</shortDescription>
+        <value>5. Will Intel create or transfer any technical data other than: published information, basic marketing material; Intel roadmap; product samples; unmodified pre-existing electronic design kits; marketing information about product capabilities, features, and how to use them; or Intel Standard Commercial Data Sheets and User&apos;s Manual for Intel products?
+&lt;ul&gt;&lt;li&gt;If Yes, describe what technical data will be created and/or provided.&lt;/li&gt;&lt;/ul&gt;</value>
+    </labels>
+    <labels>
+        <fullName>Core_MAG_Q5_Textbox</fullName>
+        <categories>Core_MAGQuestionnaireController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_MAG_Q5_Textbox</shortDescription>
+        <value>Please answer YES or NO.  If Yes, describe what technical data will be created and/or provided.</value>
+    </labels>
+    <labels>
+        <fullName>Core_MAG_Q6</fullName>
+        <categories>Core_MAGQuestionnaireController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_MAG_Q6</shortDescription>
+        <value>6. Will this customer/end-user transfer any technical data to Intel (e.g. information, guidelines, designs, schematics, specifications, or other information)?
+&lt;ul&gt;&lt;li&gt;If Yes, describe what technical data will be received.&lt;/li&gt;&lt;/ul&gt;</value>
+    </labels>
+    <labels>
+        <fullName>Core_MAG_Q6_Textbox</fullName>
+        <categories>Core_MAGQuestionnaireController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_MAG_Q6_Textbox</shortDescription>
+        <value>Please answer YES or NO.  If Yes, describe what technical data will be received.</value>
+    </labels>
+    <labels>
+        <fullName>Core_MAG_Q7</fullName>
+        <categories>Core_MAGQuestionnaireController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_MAG_Q7</shortDescription>
+        <value>(placeholder for future use)</value>
+    </labels>
+    <labels>
+        <fullName>Core_MAG_Q7_Textbox</fullName>
+        <categories>Core_MAGQuestionnaireController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_MAG_Q7_Textbox</shortDescription>
+        <value>(placeholder for future use)</value>
+    </labels>
+    <labels>
+        <fullName>Core_MAG_Q8</fullName>
+        <categories>Core_MAGQuestionnaireController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_MAG_Q8</shortDescription>
+        <value>(placeholder for future use)</value>
+    </labels>
+    <labels>
+        <fullName>Core_MAG_Q8_Textbox</fullName>
+        <categories>Core_MAGQuestionnaireController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_MAG_Q8_Textbox</shortDescription>
+        <value>(placeholder for future use)</value>
+    </labels>
+    <labels>
+        <fullName>Core_MAG_Q9</fullName>
+        <categories>Core_MAGQuestionnaireController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_MAG_Q9</shortDescription>
+        <value>(placeholder for future use)</value>
+    </labels>
+    <labels>
+        <fullName>Core_MAG_Q9_Textbox</fullName>
+        <categories>Core_MAGQuestionnaireController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_MAG_Q9_Textbox</shortDescription>
+        <value>(placeholder for future use)</value>
+    </labels>
+    <labels>
+        <fullName>Core_MAP_Page_Size</fullName>
+        <categories>IPS Product Access MAP</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Used for setting Account page &amp; Product page size for MAP</shortDescription>
+        <value>10;50;100;200</value>
+    </labels>
+    <labels>
+        <fullName>Core_MAP_Validation_Profile_Names</fullName>
+        <categories>IPS, MAP, Product Access</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Used for MAP VF Page validations</shortDescription>
+        <value>System Administrator;Cloud CRM BSA-Pre Prod;IT Admin</value>
+    </labels>
+    <labels>
+        <fullName>Core_More_Records_Search_Error</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core More Records Search Error</shortDescription>
+        <value>More than 1000 records have been returned by search criteria. Try narrowing down the search criteria.</value>
+    </labels>
+    <labels>
+        <fullName>Core_New_Solution_Group_Record_Type</fullName>
+        <categories>OpportunityValidation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>New Solution Group Record Type</shortDescription>
+        <value>New Solution Group Record Type</value>
+    </labels>
+    <labels>
+        <fullName>Core_NoOpportunityProductRecords</fullName>
+        <categories>Core_OpportunityProduct</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_NoOpportunityProductRecords</shortDescription>
+        <value>No Opportunity Product records related to the Opportunity</value>
+    </labels>
+    <labels>
+        <fullName>Core_NoRecordsError</fullName>
+        <categories>Core_OpportunityProduct</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_NoRecordsError</shortDescription>
+        <value>No Records found</value>
+    </labels>
+    <labels>
+        <fullName>Core_No_Access</fullName>
+        <categories>Core_OpportunitySearch</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core No Access</shortDescription>
+        <value>Access denied. User doesn&apos;t have access to view the page.  Please contact System Administrator for more details.</value>
+    </labels>
+    <labels>
+        <fullName>Core_No_Filter_Selected</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core No Filter Selected</shortDescription>
+        <value>Please select at least one criteria for search</value>
+    </labels>
+    <labels>
+        <fullName>Core_No_Result</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core No Result</shortDescription>
+        <value>No Opportunities found with the criteria specified.</value>
+    </labels>
+    <labels>
+        <fullName>Core_None_Value</fullName>
+        <categories>Core_OpportunityProduct</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_None_Value</shortDescription>
+        <value>--None--</value>
+    </labels>
+    <labels>
+        <fullName>Core_OK</fullName>
+        <categories>Used for replacing the hardcoded value of OK</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_OK</shortDescription>
+        <value>OK</value>
+    </labels>
+    <labels>
+        <fullName>Core_Okta_Admin_Profile_Name</fullName>
+        <categories>Okta Integration</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Okta Admin Profile Name</shortDescription>
+        <value>Okta Admin</value>
+    </labels>
+    <labels>
+        <fullName>Core_OppDescriptiveFeaturesTitle</fullName>
+        <categories>Core_OppDescriptiveFeatures</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core OppDescriptiveFeatures Title</shortDescription>
+        <value>Descriptive Features</value>
+    </labels>
+    <labels>
+        <fullName>Core_Opp_New_Opp_Record_Type_Id</fullName>
+        <categories>Core_OppChildViewController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Record Type ID for &quot;New Opportunity&quot;</shortDescription>
+        <value>012o0000000Gn16</value>
+    </labels>
+    <labels>
+        <fullName>Core_Opp_Solution_Group_Field_Id</fullName>
+        <categories>Core_OppChildViewController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Field ID for the Solution Group field on Opportunity</shortDescription>
+        <value>00No0000009KAYj</value>
+    </labels>
+    <labels>
+        <fullName>Core_OpportunityCimID</fullName>
+        <categories>Core_DealSupportHomeController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_OpportunityCimID</shortDescription>
+        <value>cimId</value>
+    </labels>
+    <labels>
+        <fullName>Core_OpportunityID</fullName>
+        <categories>Core_SalesSupportHomeController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_OpportunityID</shortDescription>
+        <value>OppId</value>
+    </labels>
+    <labels>
+        <fullName>Core_OpportunityName</fullName>
+        <categories>Core_SalesSupportHomeController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core Opportunity Name</shortDescription>
+        <value>OppName</value>
+    </labels>
+    <labels>
+        <fullName>Core_OpportunityProductEdit</fullName>
+        <categories>Core_OpportunityProduct</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_OpportunityProductEdit</shortDescription>
+        <value>Edit product attributes for this opportunity</value>
+    </labels>
+    <labels>
+        <fullName>Core_Opportunity_ID</fullName>
+        <categories>Core_OppDescriptiveFeaturesController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core Opportunity ID</shortDescription>
+        <value>sOppId</value>
+    </labels>
+    <labels>
+        <fullName>Core_Opportunity_ID_Name</fullName>
+        <categories>Core_SalesSupportHomeController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_Opportunity ID Name</shortDescription>
+        <value>Opportunity ID</value>
+    </labels>
+    <labels>
+        <fullName>Core_Opportunity_Name</fullName>
+        <categories>Core_SalesSupportHomeController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_Opportunity Name</shortDescription>
+        <value>Opportunity Name</value>
+    </labels>
+    <labels>
+        <fullName>Core_Opportunity_Owner</fullName>
+        <categories>Teams</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Opportunity Owner</shortDescription>
+        <value>Opportunity Owner</value>
+    </labels>
+    <labels>
+        <fullName>Core_Opportunity_Partner_Search</fullName>
+        <categories>Opportunity Search</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Opportunity Partner Search</shortDescription>
+        <value>Opportunity Search by Partner</value>
+    </labels>
+    <labels>
+        <fullName>Core_Opportunity_Record_Type_Id</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Record Type ID for &quot;Opportunity&quot;</shortDescription>
+        <value>012o0000000Gn18</value>
+    </labels>
+    <labels>
+        <fullName>Core_Opportunity_Search</fullName>
+        <categories>Core_OpportunitySearch</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core Opportunity Search</shortDescription>
+        <value>Opportunity Search</value>
+    </labels>
+    <labels>
+        <fullName>Core_OrderStatus</fullName>
+        <categories>Core_SalesSupportHomeController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_SalesSupportHome</shortDescription>
+        <value>Order Status</value>
+    </labels>
+    <labels>
+        <fullName>Core_Order_Seeds_Button</fullName>
+        <categories>Core_DealSupportHomeController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core Order Seeds Button</shortDescription>
+        <value>Order Seed</value>
+    </labels>
+    <labels>
+        <fullName>Core_PAR_Page_Size</fullName>
+        <categories>IPS Product Access PAR</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Used for setting product page size for PAR</shortDescription>
+        <value>10;50;100;200</value>
+    </labels>
+    <labels>
+        <fullName>Core_PickupDate</fullName>
+        <categories>Core_SalesSupportHomeController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_SalesSupportHome</shortDescription>
+        <value>Pickup Date</value>
+    </labels>
+    <labels>
+        <fullName>Core_ProductDetail</fullName>
+        <categories>Core_SalesSupportHomeController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_SalesSupportHome</shortDescription>
+        <value>Product Detail</value>
+    </labels>
+    <labels>
+        <fullName>Core_ProductName</fullName>
+        <categories>Core_SalesSupportHomeController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_SalesSupportHome</shortDescription>
+        <value>Product Name</value>
+    </labels>
+    <labels>
+        <fullName>Core_Product_Edit</fullName>
+        <categories>Core_OpportunityProduct</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core Product Edit</shortDescription>
+        <value>Edit Products for</value>
+    </labels>
+    <labels>
+        <fullName>Core_Production_Support_Profile_Name</fullName>
+        <categories>Account Owner Change</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Product Support Profile Name</shortDescription>
+        <value>Production Support</value>
+    </labels>
+    <labels>
+        <fullName>Core_ProfileNameforBypassGeo</fullName>
+        <categories>Core_Utility</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_ProfileNameforBypassGeo</shortDescription>
+        <value>Integration;</value>
+    </labels>
+    <labels>
+        <fullName>Core_Program_Membership</fullName>
+        <categories>Channel Sales Search</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Program Membership</shortDescription>
+        <value>Program Membership</value>
+    </labels>
+    <labels>
+        <fullName>Core_QuantitySent</fullName>
+        <categories>Core_SalesSupportHomeController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_SalesSupportHome</shortDescription>
+        <value>Quantity Sent</value>
+    </labels>
+    <labels>
+        <fullName>Core_Read_Permission</fullName>
+        <categories>Core_ChangeRequestHandler</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core Read Permission</shortDescription>
+        <value>Read</value>
+    </labels>
+    <labels>
+        <fullName>Core_RequestedDeliveryDate</fullName>
+        <categories>Core_DealSupportHomeController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_DealSupportHome</shortDescription>
+        <value>Requested Delivery Date</value>
+    </labels>
+    <labels>
+        <fullName>Core_RequestedQuantity</fullName>
+        <categories>Core_DealSupportHomeController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_DealSupportHome</shortDescription>
+        <value>Requested Quantity</value>
+    </labels>
+    <labels>
+        <fullName>Core_Requestor</fullName>
+        <categories>Core_SalesSupportHomeController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_SalesSupportHome</shortDescription>
+        <value>Requestor</value>
+    </labels>
+    <labels>
+        <fullName>Core_SMG_Executive_Group</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SMG Executive Group</shortDescription>
+        <value>Core_SMG_Executive</value>
+    </labels>
+    <labels>
+        <fullName>Core_SalesSupportViewTitle</fullName>
+        <categories>Core_SalesSupportHomeController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Sales Support View Title</shortDescription>
+        <value>Sales Support Home</value>
+    </labels>
+    <labels>
+        <fullName>Core_Sales_Out</fullName>
+        <categories>Channel Sales Search</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Sales Out</shortDescription>
+        <value>Sales Out</value>
+    </labels>
+    <labels>
+        <fullName>Core_Sales_Support</fullName>
+        <categories>Core_SalesSupportHome</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Sales Support</shortDescription>
+        <value>Sales Support</value>
+    </labels>
+    <labels>
+        <fullName>Core_Sales_User_Profile</fullName>
+        <categories>Core_SearchUsersOpportunityRecords_Test</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core Sales User Profile</shortDescription>
+        <value>Sales Rep</value>
+    </labels>
+    <labels>
+        <fullName>Core_Save_Button</fullName>
+        <categories>Core_OpportunityProduct</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_Save_Button</shortDescription>
+        <value>Save</value>
+    </labels>
+    <labels>
+        <fullName>Core_Search_Criteria</fullName>
+        <categories>Core_OpportunitySearch</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core Search Criteria</shortDescription>
+        <value>Search Criteria</value>
+    </labels>
+    <labels>
+        <fullName>Core_Section_Notes</fullName>
+        <categories>Core_SalesSupportHomeController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core Section Notes</shortDescription>
+        <value>Notes</value>
+    </labels>
+    <labels>
+        <fullName>Core_Section_Search</fullName>
+        <categories>Core_DealSupportHomeController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core Section Search</shortDescription>
+        <value>Search</value>
+    </labels>
+    <labels>
+        <fullName>Core_Section_Search_Keyword</fullName>
+        <categories>Core_DealSupportHomeController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core Section Search Keyword</shortDescription>
+        <value>Search Keyword</value>
+    </labels>
+    <labels>
+        <fullName>Core_Section_Seed_Detail</fullName>
+        <categories>Core_SalesSupportHomeController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core Section Seed Detail</shortDescription>
+        <value>Seed Detail</value>
+    </labels>
+    <labels>
+        <fullName>Core_Section_Seeds</fullName>
+        <categories>Core_DealSupportHomeController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_Section_Seeds_Section</shortDescription>
+        <value>Detail Section</value>
+    </labels>
+    <labels>
+        <fullName>Core_Section_Seeds_Section</fullName>
+        <categories>Core_SalesSupportHomeController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core Section Seeds Section</shortDescription>
+        <value>Order Detail</value>
+    </labels>
+    <labels>
+        <fullName>Core_Section_Shipping_Detail</fullName>
+        <categories>Core_SalesSupportHomeController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core Section Shipping Detail</shortDescription>
+        <value>Shipping Information</value>
+    </labels>
+    <labels>
+        <fullName>Core_SeedsURL</fullName>
+        <categories>Core_SalesSupportHomeController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_SeedsURL</shortDescription>
+        <value>/GetAllSeeds/</value>
+    </labels>
+    <labels>
+        <fullName>Core_SeedsURLAccount</fullName>
+        <categories>Core_SalesSupportHomeController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_SeedsURLAccount</shortDescription>
+        <value>/GetAllSeedsPerAcct/</value>
+    </labels>
+    <labels>
+        <fullName>Core_SeedsURLOpp</fullName>
+        <categories>Core_SalesSupportHomeController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_SeedsURLOpp</shortDescription>
+        <value>/GetAllSeedsPerOpp/</value>
+    </labels>
+    <labels>
+        <fullName>Core_SeedsWebservice</fullName>
+        <categories>Core_SalesSupportHomeController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_SeedsWebservice</shortDescription>
+        <value>Demo Depot Service</value>
+    </labels>
+    <labels>
+        <fullName>Core_ShippingTo</fullName>
+        <categories>Core_SalesSupportHomeController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_SalesSupportHome</shortDescription>
+        <value>Shipping To</value>
+    </labels>
+    <labels>
+        <fullName>Core_Solution_Group_Record_Type</fullName>
+        <categories>OpportunityValidation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Solution Group Record Type</shortDescription>
+        <value>Solution Group</value>
+    </labels>
+    <labels>
+        <fullName>Core_SpecialCharacter</fullName>
+        <categories>Core_Utility</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core SpecialCharacter</shortDescription>
+        <value>(; ;);%;$;*;^;&amp;</value>
+    </labels>
+    <labels>
+        <fullName>Core_StandardUser</fullName>
+        <categories>Test Classes</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core StandardUser</shortDescription>
+        <value>Standard User</value>
+    </labels>
+    <labels>
+        <fullName>Core_StateCode</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core StateCode</shortDescription>
+        <value>StateCode</value>
+    </labels>
+    <labels>
+        <fullName>Core_State_Validation_Error</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>State Validation Error</shortDescription>
+        <value>Please select a value for State/Province from the available list</value>
+    </labels>
+    <labels>
+        <fullName>Core_Submitter</fullName>
+        <categories>Core_SalesSupportHomeController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_Submitter</shortDescription>
+        <value>Submitter</value>
+    </labels>
+    <labels>
+        <fullName>Core_SuccessfulUpdate</fullName>
+        <categories>Core_OpportunityProductEdit</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_SuccessfulUpdate</shortDescription>
+        <value>Successfully updated the product details related to the opportunity</value>
+    </labels>
+    <labels>
+        <fullName>Core_System_Admin_Profile_Name</fullName>
+        <categories>Account Workflow</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>System Admin Profile Name</shortDescription>
+        <value>System Administrator</value>
+    </labels>
+    <labels>
+        <fullName>Core_Team_Member</fullName>
+        <categories>Teams</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Team Member</shortDescription>
+        <value>Team Member (100%)</value>
+    </labels>
+    <labels>
+        <fullName>Core_Technical_Owner</fullName>
+        <categories>Core_OpportunityHandler</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core Technical Owner</shortDescription>
+        <value>Technical Owner (100%)</value>
+    </labels>
+    <labels>
+        <fullName>Core_TimeOut</fullName>
+        <categories>Core_SalesSupportViewController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_TimeOut</shortDescription>
+        <value>30000</value>
+    </labels>
+    <labels>
+        <fullName>Core_Uncovered_Account_ID</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Uncovered Account ID</shortDescription>
+        <value>005o0000001zEZi</value>
+    </labels>
+    <labels>
+        <fullName>Core_Validation_Profile_Names</fullName>
+        <categories>IPS, PAR, Product Access</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>These Profiles can use PAR VF page regardless of Account Team membership</shortDescription>
+        <value>System Administrator;IPS Support Org Admin;IPS Agent;IPS Agent Enhanced;Sales Rep-BB-Dual IPS;Cloud CRM BSA-Pre Prod</value>
+    </labels>
+    <labels>
+        <fullName>Core_ValueForCore</fullName>
+        <categories>Core_OpportunityDescriptiveFeature</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_ValueForCore</shortDescription>
+        <value>Core_</value>
+    </labels>
+    <labels>
+        <fullName>Core_ValueForUnderscore</fullName>
+        <categories>Core_OpportunityDescriptiveFeature</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_ValueForUnderscore</shortDescription>
+        <value>__c</value>
+    </labels>
+    <labels>
+        <fullName>Core_ValueforSemicolon</fullName>
+        <categories>Core_OpportunityDescriptiveFeature</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_ValueforSemicolon</shortDescription>
+        <value>;</value>
+    </labels>
+    <labels>
+        <fullName>Core_Vendor_Sales_Center_ID</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Vendor Sales Center ID</shortDescription>
+        <value>005o0000001fIMJ</value>
+    </labels>
+    <labels>
+        <fullName>Core_WWID_Not_Found</fullName>
+        <categories>Core_SalesSupportHome</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core WWID Not Found</shortDescription>
+        <value>WWID is not updated on your user record.</value>
+    </labels>
+    <labels>
+        <fullName>Core_aceOppID</fullName>
+        <categories>Core_SalesSupportHomeController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Core_aceOppID</shortDescription>
+        <value>aceOppID</value>
+    </labels>
+    <labels>
+        <fullName>EAASCertificate_Name</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>EAASCertificate_Name</shortDescription>
+        <value>EAASCertificate</value>
+    </labels>
+    <labels>
+        <fullName>EAASCertificate_URL</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>EAASCertificate_URL</shortDescription>
+        <value>https://encapicrm.inteldev.shnpoc.net/encryption/1/Encrypt</value>
+    </labels>
+    <labels>
+        <fullName>EAAS_EndPoint_URL</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>EAAS_EndPoint_URL</shortDescription>
+        <value>https://encapicrm.inteldev.shnpoc.net/encryption/2/encryptsosl</value>
+    </labels>
+    <labels>
+        <fullName>EAAS_TestURL</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>EAAS_EndPoint_URL</shortDescription>
+        <value>https://encapicrm.inteldev.shnpoc.net/encryption/2/encryptsosl</value>
+    </labels>
+    <labels>
+        <fullName>IPS_Next_Response_Due_Default_in_Minutes</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IPS Next Response Due Default in Minutes</shortDescription>
+        <value>10080</value>
+    </labels>
+    <labels>
+        <fullName>IPS_Search_Image_URI</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IPS Search Image URI</shortDescription>
+        <value>/servlet/servlet.FileDownload?file=015210000008uop</value>
+    </labels>
+    <labels>
+        <fullName>IPS_User_Admin</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IPS_User_Admin</shortDescription>
+        <value>Admin</value>
+    </labels>
+    <labels>
+        <fullName>IPS_User_External</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IPS_User_External</shortDescription>
+        <value>Customer</value>
+    </labels>
+    <labels>
+        <fullName>IPS_User_FAE</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IPS_User_FAE</shortDescription>
+        <value>FAE</value>
+    </labels>
+    <labels>
+        <fullName>IPS_User_TME</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IPS_User_TME</shortDescription>
+        <value>TME</value>
+    </labels>
+    <labels>
+        <fullName>Interested_Parties_Internal_Admin</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Interested Parties IPS Admin</shortDescription>
+        <value>IPS Support Org Admin</value>
+    </labels>
+    <labels>
+        <fullName>Interested_Parties_Internal_Agent</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Interested Parties IPS Agent</shortDescription>
+        <value>IPS Agent;IPS Agent Enhanced;Sales Rep-BB-Dual IPS</value>
+    </labels>
+    <labels>
+        <fullName>MAG_Document_Id</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MAG Document Id</shortDescription>
+        <value>015210000000Viy</value>
+    </labels>
+    <labels>
+        <fullName>MAP_Header_Record_Type_ID</fullName>
+        <categories>IPS, MAP, Product Access</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MAP Header Record Type ID</shortDescription>
+        <value>012210000004IHY</value>
+    </labels>
+    <labels>
+        <fullName>MAP_LineItem_Record_Type_ID</fullName>
+        <categories>IPS, MAP, Product Access</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MAP LineItem Record Type ID</shortDescription>
+        <value>012210000004IKA</value>
+    </labels>
+    <labels>
+        <fullName>NDA_Acceptance_Time</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NDA Acceptance Time</shortDescription>
+        <value>90</value>
+    </labels>
+    <labels>
+        <fullName>PAR_Header_Record_Type_ID</fullName>
+        <categories>IPS, MAP, Product Access</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PAR Header Record Type ID</shortDescription>
+        <value>012210000004IHZ</value>
+    </labels>
+    <labels>
+        <fullName>PAR_LineItem_Record_Type_ID</fullName>
+        <categories>IPS, MAP, Product Access</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PAR LineItem Record Type ID</shortDescription>
+        <value>012210000004IKB</value>
+    </labels>
+    <labels>
+        <fullName>SOQL_Case_Assignment_Rule</fullName>
+        <categories>SOQL Queries</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>IPS Case Assignment Rule</shortDescription>
+        <value>select id from AssignmentRule where sobjectType = &apos;Case&apos; and Active = true limit 1</value>
+    </labels>
+    <labels>
+        <fullName>URL</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>EAAS_URL</shortDescription>
+        <value>https://api.shn.com/encryption/1/Encrypt</value>
+    </labels>
+</CustomLabels>

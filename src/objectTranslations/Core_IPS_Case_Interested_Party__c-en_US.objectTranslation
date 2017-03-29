@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Interested Party</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Interested Parties</value>
+    </caseValues>
+    <fields>
+        <label><!-- Active --></label>
+        <name>Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agent Name --></label>
+        <name>Agent_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case --></label>
+        <name>Case__c</name>
+        <relationshipLabel><!-- Interested Parties --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- Interested Parties --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Account Name --></label>
+        <name>Core_IPS_Account_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- First Name --></label>
+        <name>First_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Name --></label>
+        <name>Last_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Test --></label>
+        <name>Test__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>External</masterLabel>
+            <translation><!-- External --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal</masterLabel>
+            <translation><!-- Internal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>User__c</name>
+        <relationshipLabel><!-- Interested Parties --></relationshipLabel>
+    </fields>
+    <recordTypes>
+        <label><!-- Cutomer --></label>
+        <name>Cutomer</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Internal --></label>
+        <name>Internal</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- User should not be blank when Contact is Selected --></errorMessage>
+        <name>IF_User_is_Blank_when_Contact_is_associa</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Add --></label>
+        <name>Add</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Add_External_Interested_Party --></label>
+        <name>Add_External_Interested_Party</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Add_Internal_Interested_Party --></label>
+        <name>Add_Internal_Interested_Party</name>
+    </webLinks>
+</CustomObjectTranslation>
