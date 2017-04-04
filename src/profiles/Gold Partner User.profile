@@ -56,6 +56,10 @@
         <visible>true</visible>
     </applicationVisibilities>
     <classAccesses>
+        <apexClass>AccountListAuraController</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>ChangePasswordController</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -97,6 +101,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>Enterprise_ServiceLayer_CaseHandling</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>ExpenseController</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -2744,6 +2752,26 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Expense__c.Amount__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Expense__c.Client__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Expense__c.Date__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Expense__c.Reimbursed__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Idea.Attachment</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -3774,6 +3802,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Event-Event Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Expense__c-Expense Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Global-Global Layout</layout>

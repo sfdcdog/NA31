@@ -56,6 +56,10 @@
         <visible>true</visible>
     </applicationVisibilities>
     <classAccesses>
+        <apexClass>AccountListAuraController</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>ChangePasswordController</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -97,6 +101,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>Enterprise_ServiceLayer_CaseHandling</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>ExpenseController</apexClass>
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
@@ -2744,6 +2752,26 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Expense__c.Amount__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Expense__c.Client__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Expense__c.Date__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Expense__c.Reimbursed__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Idea.Attachment</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -3776,6 +3804,9 @@
         <layout>Event-Event Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Expense__c-Expense Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Global-Global Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -4219,6 +4250,15 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
         <object>EntitlementContact</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Expense__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <objectPermissions>
