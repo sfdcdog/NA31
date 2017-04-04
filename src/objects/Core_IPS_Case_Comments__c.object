@@ -21,10 +21,6 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>Follow</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
     </actionOverrides>
@@ -113,37 +109,39 @@
         <description>This field will be used for migration processing to identify type of note migrated to allow Bulk Export/ Delete</description>
         <externalId>false</externalId>
         <label>Migrated Note Type</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Partner_Category_Info</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Env_Detail_Private</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Env_Detail_Public</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Comm_Log_Private</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Comm_Log_Public</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Partner_Category_Info</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Env_Detail_Private</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Env_Detail_Public</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Comm_Log_Private</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Comm_Log_Public</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Core_IPS_NickName__c</fullName>
@@ -186,25 +184,27 @@
         <fullName>Core_Promote_Status__c</fullName>
         <externalId>false</externalId>
         <label>Promote Status</label>
-        <picklist>
-            <picklistValues>
-                <fullName>In Progress</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Failed</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Done</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>In Progress</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Failed</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Done</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Test_for_Rich__c</fullName>

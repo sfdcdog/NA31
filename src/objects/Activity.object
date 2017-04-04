@@ -56,62 +56,66 @@
         <fullName>Core_Activity_Type__c</fullName>
         <externalId>false</externalId>
         <label>Activity Type</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Promotion</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Recommendation</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Profiling/Survey</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Membership</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Promotion</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Recommendation</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Profiling/Survey</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Membership</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
         <visibleLines>5</visibleLines>
     </fields>
     <fields>
         <fullName>Core_Call_Result__c</fullName>
         <externalId>false</externalId>
         <label>Call Result</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Contact Made with Decision Maker</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Contact Made Not with Decision Maker</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Voicemail</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>No Answer</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Invalid Number</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Contact Made with Decision Maker</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Contact Made Not with Decision Maker</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Voicemail</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No Answer</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Invalid Number</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Core_Call_Script_API_Name__c</fullName>
@@ -154,39 +158,41 @@
         <fullName>Core_Task_Type__c</fullName>
         <externalId>false</externalId>
         <label>Task Type</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Customer Email</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Customer Chat</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Customer Call</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Social Interaction</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Customer Meeting</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Solution Milestone</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Customer Presentation</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Customer Email</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Customer Chat</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Customer Call</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Social Interaction</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Customer Meeting</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Solution Milestone</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Customer Presentation</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <listViews>
         <fullName>AllActivities</fullName>

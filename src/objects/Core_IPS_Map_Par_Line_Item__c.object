@@ -21,10 +21,6 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>Follow</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
     </actionOverrides>
@@ -106,21 +102,23 @@ Indicates if the PAR line item requires approval or will automatically be approv
         <externalId>false</externalId>
         <inlineHelpText>Does the PAR Line Item require approval or will it be automatically approved?</inlineHelpText>
         <label>Approval Type</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Approval Required</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Auto Approve</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Approval Required</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Auto Approve</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Core_Approving_Product_Organization__c</fullName>
@@ -197,25 +195,27 @@ Indicates if the PAR line item requires approval or will automatically be approv
         <externalId>false</externalId>
         <inlineHelpText>Approval Status of this Line Item (only for PAR Line Items that require approval)</inlineHelpText>
         <label>Line Item Approval Status</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Approved</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Pending</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Rejected</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Approved</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Pending</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Rejected</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Core_MAP_PAR__c</fullName>
@@ -254,25 +254,27 @@ Indicates if the PAR line item requires approval or will automatically be approv
         <externalId>false</externalId>
         <inlineHelpText>Active, Inactive, or Pending.  Pending can only apply to PAR.</inlineHelpText>
         <label>Line Item Status</label>
-        <picklist>
-            <picklistValues>
-                <fullName>ACTIVE</fullName>
-                <default>true</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>PENDING</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>INACTIVE</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>ACTIVE</fullName>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>PENDING</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>INACTIVE</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Core_Submitter_Comments__c</fullName>

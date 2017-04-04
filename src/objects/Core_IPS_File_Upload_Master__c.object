@@ -21,10 +21,6 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>Follow</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
     </actionOverrides>
@@ -96,45 +92,47 @@
         <fullName>Core_Category__c</fullName>
         <externalId>false</externalId>
         <label>Category</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Analyzer</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>BIOS/Firmware</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Code Sample</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Compiler</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Documentation</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Driver</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Library</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Patches</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Analyzer</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>BIOS/Firmware</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Code Sample</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Compiler</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Documentation</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Driver</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Library</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Patches</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Core_Effective_Date__c</fullName>
@@ -264,25 +262,27 @@
         <fullName>Core_Upload_Status__c</fullName>
         <externalId>false</externalId>
         <label>Upload Status</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Complete</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Pending</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Cancelled</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Complete</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Pending</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Cancelled</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Core_Upload_UserId__c</fullName>

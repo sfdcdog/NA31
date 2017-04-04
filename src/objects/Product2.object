@@ -21,10 +21,6 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>Follow</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
     </actionOverrides>
@@ -209,20 +205,22 @@ Set to True by default for VPH L2 &amp; L3 and VPLCH L2 and L4.</description>
         <externalId>false</externalId>
         <inlineHelpText>Set within SFDC by a local IT/Sys Admin, Data Ops/Steward or KTBR. At the time of initial data setup, this is set to BLANK or NULL. If set manually, the value of this field overrides the visibility setting obtained from integration/externally.</inlineHelpText>
         <label>IPS Visible Flag - Internal</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Yes</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>No</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Core_IPS_Visible_Flag__c</fullName>
@@ -355,20 +353,22 @@ If already enabled (value is Yes), it should set to No with extreme caution, as 
 Defines which organization the product belongs to.</description>
         <externalId>false</externalId>
         <label>Product_Org</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Sales</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>IPS</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Sales</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>IPS</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Core_Product_Series_EPM_ID__c</fullName>
@@ -477,13 +477,6 @@ VPH lvl 1</description>
     </fields>
     <fields>
         <fullName>Family</fullName>
-        <picklist>
-            <picklistValues>
-                <fullName>None</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
     </fields>
@@ -501,13 +494,6 @@ VPH lvl 1</description>
     </fields>
     <fields>
         <fullName>QuantityUnitOfMeasure</fullName>
-        <picklist>
-            <picklistValues>
-                <fullName>Each</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <trackHistory>false</trackHistory>
         <type>Picklist</type>
     </fields>

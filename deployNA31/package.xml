@@ -2,7 +2,16 @@
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
         <members>*</members>
-        <name>Group</name>
+        <name>AuraDefinitionBundle</name>
     </types>
-    <version>36.0</version>
+    <types>
+        <members>Expense__c</members>
+        <name>CustomObject</name>
+    </types>
+	<types>
+        <members>AccountListAuraController</members>
+		<members>ExpenseController</members>
+        <name>ApexClass</name>
+    </types>
+	<version>39.0</version>
 </Package>
