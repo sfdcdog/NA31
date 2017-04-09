@@ -1,4 +1,5 @@
 eclipse.preferences.version=1
+<<<<<<< HEAD
 endpointApiVersion=38.0
 endpointEnvironment=Production/Developer Edition
 endpointServer=login.salesforce.com
@@ -12,4 +13,18 @@ preferToolingDeployment=true
 projectIdentifier=IDE7215827007551065166
 readTimeout=400
 sessionId=
+=======
+endpointApiVersion=36.0
+endpointEnvironment=Production/Developer Edition
+endpointServer=login.salesforce.com
+httpsProtocol=true
+ideVersion=36.0
+keependpoint=false
+metadataFormatVersion=36.0
+namespacePrefix=
+packageName=unpackaged
+preferToolingDeployment=true
+projectIdentifier=IDE-4643251742042927789
+readTimeout=400
+>>>>>>> branch 'developJRK' of https://github.com/SFDCPirate/NA31
 username=jesseroshanx.kanaparthi@intel.com

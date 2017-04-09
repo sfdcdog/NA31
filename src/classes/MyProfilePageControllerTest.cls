@@ -1,5 +1,8 @@
 /**
+<<<<<<< HEAD
 //
+=======
+>>>>>>> branch 'developJRK' of https://github.com/SFDCPirate/NA31
  * An apex class that keeps updates of a portal user in sync with its corresponding contact.
    Guest users are never able to access this page.
  */

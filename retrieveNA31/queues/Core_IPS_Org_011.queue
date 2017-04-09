@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>ashok.v.kanagarla@intel.com</email>
+    <name>IPS Org 011</name>
+    <queueSobject>
+        <sobjectType>Core_IPS_MAP_PAR__c</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Core_IPS_Product_Organization__c</sobjectType>
+    </queueSobject>
+</Queue>

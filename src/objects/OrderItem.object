@@ -21,6 +21,13 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
+<<<<<<< HEAD
+=======
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+>>>>>>> branch 'developJRK' of https://github.com/SFDCPirate/NA31
         <actionName>SaveEdit</actionName>
         <type>Default</type>
     </actionOverrides>

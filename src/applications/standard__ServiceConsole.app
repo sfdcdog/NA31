@@ -4,7 +4,10 @@
     <detailPageRefreshMethod>none</detailPageRefreshMethod>
     <enableCustomizeMyTabs>false</enableCustomizeMyTabs>
     <enableKeyboardShortcuts>true</enableKeyboardShortcuts>
+<<<<<<< HEAD
     <enableListViewHover>true</enableListViewHover>
+=======
+>>>>>>> branch 'developJRK' of https://github.com/SFDCPirate/NA31
     <enableListViewReskin>true</enableListViewReskin>
     <enableMultiMonitorComponents>true</enableMultiMonitorComponents>
     <enablePinTabs>true</enablePinTabs>

@@ -21,6 +21,7 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
+<<<<<<< HEAD
         <actionName>List</actionName>
         <type>Default</type>
     </actionOverrides>
@@ -275,6 +276,260 @@ Indicates if the PAR line item requires approval or will automatically be approv
                 </value>
             </valueSetDefinition>
         </valueSet>
+=======
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>This allows an org admin to specify the products their org supports</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>Core_Account_Geo__c</fullName>
+        <description>Geo value of the Account</description>
+        <externalId>false</externalId>
+        <formula>TEXT(Core_Account__r.Core_Geo__c)</formula>
+        <inlineHelpText>Geo value of the Account</inlineHelpText>
+        <label>Account Geo</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Core_Account_Sub_Geo__c</fullName>
+        <description>Sub Geo value of the Account</description>
+        <externalId>false</externalId>
+        <formula>TEXT( Core_Account__r.Core_Sub_Geo__c)</formula>
+        <inlineHelpText>Sub Geo value of the Account</inlineHelpText>
+        <label>Account Sub Geo</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Core_Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Account</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Account that Product Access will apply to</inlineHelpText>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Product Access Line Items</relationshipLabel>
+        <relationshipName>Map_Par_Line_Items</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Core_Approval_Type__c</fullName>
+        <description>consider a formula
+
+Indicates if the PAR line item requires approval or will automatically be approved, based off the access flag of the Supported Product.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Does the PAR Line Item require approval or will it be automatically approved?</inlineHelpText>
+        <label>Approval Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Approval Required</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Auto Approve</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Core_Approving_Product_Organization__c</fullName>
+        <description>Unique ID for the Support Org that supports the Supported Product</description>
+        <externalId>false</externalId>
+        <formula>Core_MAP_PAR__r.Core_Product_Organization__r.Name</formula>
+        <inlineHelpText>Unique ID for the Support Org that supports the Supported Product</inlineHelpText>
+        <label>Support Org</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Core_Asset_Status__c</fullName>
+        <description>Derived status of the Asset referred to by the current Product Access Line Item</description>
+        <externalId>false</externalId>
+        <formula>IF (ISPICKVAL( Core_Status__c,&quot;Pending&quot;),&quot;N/A&quot;, IF (Core_Intel_Product__r.Id = NULL,&quot;N/A&quot;,
+	CASE(Core_Intel_Product__r.Status,&quot;Obsolete&quot;,&quot;INACTIVE&quot;,&quot;Inactive&quot;,&quot;INACTIVE&quot;,
+	&quot;Installed&quot;,&quot;ACTIVE&quot;,&quot;Active&quot;,&quot;ACTIVE&quot;,
+	&quot;&quot;,&quot;ACTIVE&quot;,
+	&quot;ERROR&quot;)))</formula>
+        <inlineHelpText>Status (if available) of the Asset referred to by the current Product Access Line Item</inlineHelpText>
+        <label>Asset Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Core_Intel_Product__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>The asset referred to by this Product Access Line Item</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The asset referred to by this Product Access Line Item</inlineHelpText>
+        <label>Intel Product</label>
+        <referenceTo>Asset</referenceTo>
+        <relationshipLabel>Product Access Line Items</relationshipLabel>
+        <relationshipName>Product_Access_Line_Items</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Core_LI_Approver__c</fullName>
+        <description>Name of the user that approved or rejected the PAR line item</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Name of the user that approved or rejected the PAR line item</inlineHelpText>
+        <label>Approver</label>
+        <length>250</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Core_LI_Decision_Date__c</fullName>
+        <description>Date/time when a PAR Line Item is Approved/Rejected</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Date/time when a PAR Line Item is Approved/Rejected</inlineHelpText>
+        <label>Decision Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Core_Line_Item_Approval_Status__c</fullName>
+        <description>Approval Status of this Line Item (only for PAR Line Items that require approval)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Approval Status of this Line Item (only for PAR Line Items that require approval)</inlineHelpText>
+        <label>Line Item Approval Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pending</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Core_MAP_PAR__c</fullName>
+        <description>Product Access Record Header.  Used for both MAP &amp; PAR</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Product Access Record (Header)</inlineHelpText>
+        <label>MAP/PAR</label>
+        <referenceTo>Core_IPS_MAP_PAR__c</referenceTo>
+        <relationshipLabel>Product Access Line Items</relationshipLabel>
+        <relationshipName>Map_Par_Line_Items</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Core_Pending_Duration__c</fullName>
+        <description>Time (hours) that a PAR line item was in Pending status (awaiting Approval or Rejection).</description>
+        <externalId>false</externalId>
+        <formula>IF(ISPICKVAL(Core_Line_Item_Approval_Status__c, &quot;Pending&quot;), (NOW()-CreatedDate)*24,  (Core_LI_Decision_Date__c-CreatedDate)*24 )</formula>
+        <inlineHelpText># of hours a PAR Line Item spent pending Approval or Rejection</inlineHelpText>
+        <label>Pending Duration (Hrs)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Core_Status__c</fullName>
+        <description>Status of the MAP/PAR Line Item - Different from Line Item Approval Status.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Active, Inactive, or Pending.  Pending can only apply to PAR.</inlineHelpText>
+        <label>Line Item Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>ACTIVE</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PENDING</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>INACTIVE</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+>>>>>>> branch 'developJRK' of https://github.com/SFDCPirate/NA31
     </fields>
     <fields>
         <fullName>Core_Submitter_Comments__c</fullName>

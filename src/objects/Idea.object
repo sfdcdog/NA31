@@ -20,10 +20,23 @@
     <enableFeeds>false</enableFeeds>
     <fields>
         <fullName>Categories</fullName>
+<<<<<<< HEAD
         <type>Picklist</type>
     </fields>
     <fields>
         <fullName>Status</fullName>
+=======
+        <picklist>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Status</fullName>
+        <picklist>
+            <sorted>false</sorted>
+        </picklist>
+>>>>>>> branch 'developJRK' of https://github.com/SFDCPirate/NA31
         <type>Picklist</type>
     </fields>
     <listViews>

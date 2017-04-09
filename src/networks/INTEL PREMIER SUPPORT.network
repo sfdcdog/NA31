@@ -21,7 +21,10 @@
     <enableNicknameDisplay>false</enableNicknameDisplay>
     <enablePrivateMessages>false</enablePrivateMessages>
     <enableReputation>false</enableReputation>
+<<<<<<< HEAD
     <enableSiteAsContainer>false</enableSiteAsContainer>
+=======
+>>>>>>> branch 'developJRK' of https://github.com/SFDCPirate/NA31
     <forgotPasswordTemplate>unfiled$public/CommunityForgotPasswordEmailTemplate</forgotPasswordTemplate>
     <networkMemberGroups>
         <profile>Admin</profile>

@@ -2,7 +2,10 @@
 <CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
     <defaultLandingTab>standard-Case</defaultLandingTab>
     <description>IPS Pre-Sales</description>
+<<<<<<< HEAD
     <formFactors>Large</formFactors>
+=======
+>>>>>>> branch 'developJRK' of https://github.com/SFDCPirate/NA31
     <label>Pre-Sales</label>
     <tab>Core_IPS_Product_Organization__c</tab>
     <tab>Core_IPS_Project__c</tab>

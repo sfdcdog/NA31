@@ -27,6 +27,12 @@
     <enableFeeds>false</enableFeeds>
     <fields>
         <fullName>CompetitorName</fullName>
+<<<<<<< HEAD
+=======
+        <picklist>
+            <sorted>false</sorted>
+        </picklist>
+>>>>>>> branch 'developJRK' of https://github.com/SFDCPirate/NA31
         <type>Picklist</type>
     </fields>
 </CustomObject>
