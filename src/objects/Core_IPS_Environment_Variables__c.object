@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>The master set of Env Details questions, defined per Support Org. At this point, Env Details questions are not linked to any Product or Subcat, nor is conditional display on Case configured via flags.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>Core_Answers__c</fullName>
+        <externalId>false</externalId>
+        <label>Answers</label>
+        <length>5000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Core_Datatype__c</fullName>
+        <externalId>false</externalId>
+        <label>Datatype</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>picklist</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>text (255)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>textarea (5000)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>multi select</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Core_Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Description</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Core_Product_Organization__c</fullName>
+        <externalId>false</externalId>
+        <label>Core Product Organization</label>
+        <referenceTo>Core_IPS_Product_Organization__c</referenceTo>
+        <relationshipName>Environmental_Details</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Core_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Active</fullName>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>Inactive</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Core_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>NA</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Environmental Detail Master</label>
+    <nameField>
+        <label>Environment Variables Question</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Environmental Details Master</pluralLabel>
+    <searchLayouts>
+        <lookupDialogsAdditionalFields>Core_Product_Organization__c</lookupDialogsAdditionalFields>
+        <lookupFilterFields>NAME</lookupFilterFields>
+        <lookupFilterFields>Core_Product_Organization__c</lookupFilterFields>
+        <lookupFilterFields>Core_Datatype__c</lookupFilterFields>
+        <lookupFilterFields>Core_Description__c</lookupFilterFields>
+        <lookupFilterFields>Core_Status__c</lookupFilterFields>
+        <lookupFilterFields>Core_Type__c</lookupFilterFields>
+        <lookupPhoneDialogsAdditionalFields>Core_Answers__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Core_Datatype__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Core_Status__c</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>Core_Product_Organization__c</searchFilterFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>Core_Description__c</searchFilterFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>Core_IPS_Env_Dtls_Master_Ans_No_Blanks</fullName>
+        <active>true</active>
+        <description>Ensures that when a datatype of Picklist or Multi Select is selected, there must be at least one row of text in the Answer text box.</description>
+        <errorConditionFormula>AND
+(OR(
+ISPICKVAL(Core_Datatype__c, &apos;picklist&apos;), ISPICKVAL(Core_Datatype__c, &apos;multi select&apos;)
+),
+ ISBLANK(Core_Answers__c) 
+)</errorConditionFormula>
+        <errorDisplayField>Core_Answers__c</errorDisplayField>
+        <errorMessage>Enter at least 1 row of text when Datatype is &apos;Picklist&apos; or &apos;Multi Select&apos;.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Core_IPS_Env_Dtls_Master_Choose_DataType</fullName>
+        <active>false</active>
+        <description>Ensure the DataType field cannot be blank. Input is mandatory.</description>
+        <errorConditionFormula>ISBLANK (TEXT(Core_Datatype__c))</errorConditionFormula>
+        <errorDisplayField>Core_Datatype__c</errorDisplayField>
+        <errorMessage>Datatype must be specified.</errorMessage>
+    </validationRules>
+</CustomObject>

@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>IPS organization that is responsible for providing support to Intel customers, to specific supported products.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Read</externalSharingModel>
+    <fieldSets>
+        <fullName>SupportOrgFieldSet</fullName>
+        <description>Visualforce Page - Core_IPS_Lookup_Page_Syed</description>
+        <displayedFields>
+            <field>Name</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>SupportOrgFieldSet</label>
+    </fieldSets>
+    <fields>
+        <fullName>Core_IPS_Support_Org_Name__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Brief name or acronym of the IPS Support Org. May or may not align with the Intel Business Unit aka Division name.</inlineHelpText>
+        <label>Support Org Name</label>
+        <length>255</length>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Core_Organization_Description__c</fullName>
+        <description>Detailed description of the product organization.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Use a meaningful name incorporating the usage model, segment or application, since this value is shown to Intel customers, and must allow them to disambiguate between Support Orgs if applicable.</inlineHelpText>
+        <label>Product Focus Area</label>
+        <length>255</length>
+        <required>true</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Support Org</label>
+    <listViews>
+        <fullName>Core_IPS_Org</fullName>
+        <columns>NAME</columns>
+        <columns>Core_IPS_Support_Org_Name__c</columns>
+        <columns>Core_Organization_Description__c</columns>
+        <columns>OWNER.ALIAS</columns>
+        <columns>CREATEDBY_USER.ALIAS</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <label>IPS Support Org All</label>
+    </listViews>
+    <listViews>
+        <fullName>Core_IPS_Org_001_Core_IPS_Product_Organization</fullName>
+        <filterScope>Queue</filterScope>
+        <label>IPS Org 001</label>
+        <queue>Core_IPS_Org_001</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Core_IPS_Org_002_Core_IPS_Product_Organization</fullName>
+        <filterScope>Queue</filterScope>
+        <label>IPS Org 002</label>
+        <queue>Core_IPS_Org_002</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Core_IPS_Org_003_Core_IPS_Product_Organization</fullName>
+        <filterScope>Queue</filterScope>
+        <label>IPS Org 003</label>
+        <queue>Core_IPS_Org_003</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Core_IPS_Org_006_Core_IPS_Product_Organization</fullName>
+        <filterScope>Queue</filterScope>
+        <label>IPS Org 006</label>
+        <queue>Core_IPS_Org_006</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Core_IPS_Org_007_Core_IPS_Product_Organization</fullName>
+        <filterScope>Queue</filterScope>
+        <label>IPS Org 007</label>
+        <queue>Core_IPS_Org_007</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Core_IPS_Org_011_Core_IPS_Product_Organization</fullName>
+        <filterScope>Queue</filterScope>
+        <label>IPS Org 011</label>
+        <queue>Core_IPS_Org_011</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Core_IPS_Org_012_Core_IPS_Product_Organization</fullName>
+        <filterScope>Queue</filterScope>
+        <label>IPS - CCG-CISD</label>
+        <queue>Core_IPS_Org_012</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Core_IPS_Org_013_Core_IPS_Product_Organization</fullName>
+        <filterScope>Queue</filterScope>
+        <label>IPS - Data Center</label>
+        <queue>Core_IPS_Org_013</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Core_IPS_Org_014_Core_IPS_Product_Organization</fullName>
+        <filterScope>Queue</filterScope>
+        <label>IPS - Server Platforms</label>
+        <queue>Core_IPS_Org_014</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Core_IPS_Org_015_Core_IPS_Product_Organization</fullName>
+        <filterScope>Queue</filterScope>
+        <label>IPS - Client RnD and Windows Software So</label>
+        <queue>Core_IPS_Org_015</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <nameField>
+        <displayFormat>Org-{000}</displayFormat>
+        <label>Support Org Number</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Support Orgs</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>IPS_Support_Org</fullName>
+        <active>true</active>
+        <label>IPS Support Org</label>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>Core_IPS_Support_Org_Name__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Core_Organization_Description__c</customTabListAdditionalFields>
+        <excludedStandardButtons>ChangeOwner</excludedStandardButtons>
+        <excludedStandardButtons>Accept</excludedStandardButtons>
+        <lookupDialogsAdditionalFields>Core_IPS_Support_Org_Name__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Core_Organization_Description__c</lookupDialogsAdditionalFields>
+        <searchResultsAdditionalFields>Core_IPS_Support_Org_Name__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Core_Organization_Description__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Read</sharingModel>
+    <webLinks>
+        <fullName>Core_IPS_All_Operational_Env_Details_Report</fullName>
+        <availability>online</availability>
+        <description>Report showing Env Details relative to either Supported Product or Subcat as configured by Org Admin.</description>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Environment Details - Combined</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/00O21000000L2Uf?pv0={!Core_IPS_Product_Organization__c.Name}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Core_IPS_Create_Map</fullName>
+        <availability>online</availability>
+        <description>Create Product Access - Create MAP</description>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Create Product Access</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>window.open(&quot;/apex/Core_IPS_Create_MAP?scontrolCaching=1&amp;id={!Core_IPS_Product_Organization__c.Id}&amp;eType=Map&quot;,&quot;_blank&quot;);</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Core_IPS_Env_Details_Master_Q_A_Report</fullName>
+        <availability>online</availability>
+        <description>All Master Environment Details configured for the Support Org, together with Answers, DataType and Status</description>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>All Env Details Q&amp;A for Org</masterLabel>
+        <openType>newWindow</openType>
+        <position>topLeft</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/00O21000000SFkd?pv0={!Core_IPS_Product_Organization__c.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Core_IPS_Environment_Details_Subcategories</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Environment Details by Subcategories</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/00O21000000L2UB?pv0={!Core_IPS_Product_Organization__c.Name}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Core_IPS_Environment_Details_Supported_Products</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Environment Details by Supported Product</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/00O21000000L2UG?pv0={!Core_IPS_Product_Organization__c.Name}</url>
+    </webLinks>
+</CustomObject>

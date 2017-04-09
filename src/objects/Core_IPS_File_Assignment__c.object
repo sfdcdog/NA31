@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fieldSets>
+        <fullName>Core_File_Assignment_Search</fullName>
+        <description>File Assignment Search VF Page</description>
+        <displayedFields>
+            <field>Core_File_Name__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Core_File_Description__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Core_File_Size__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Core_Category__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Core_Effective_Date__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Core_Expiration_Date__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Core_IPS_File_Upload_Master__r.Core_File_Hyperlink__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Core_Supported_Product_Name__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Core_Account__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Core_Support_Org_ID__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LastModifiedDate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LastModifiedById</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>File Assignment Search</label>
+    </fieldSets>
+    <fields>
+        <fullName>Core_Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Account.Core_IPS_Active__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>IPS File Assignments</relationshipLabel>
+        <relationshipName>IPS_File_Assignments</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Core_Category__c</fullName>
+        <description>The File Category value derived from the IPS File Upload Master and displayed on the IPS File Assignments object.</description>
+        <externalId>false</externalId>
+        <formula>TEXT( Core_IPS_File_Upload_Master__r.Core_Category__c )</formula>
+        <label>File Category</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Core_Effective_Date__c</fullName>
+        <description>The effective data field value derived from the IPS File Upload Master and displayed on the IPS File Assignments object.</description>
+        <externalId>false</externalId>
+        <formula>Core_IPS_File_Upload_Master__r.Core_Effective_Date__c</formula>
+        <label>Effective Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Core_Expiration_Date__c</fullName>
+        <description>The expiration date value derived from the IPS File Upload Master and displayed on the IPS File Assignments object.</description>
+        <externalId>false</externalId>
+        <formula>Core_IPS_File_Upload_Master__r.Core_Expiration_Date__c</formula>
+        <label>Expiration Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Core_File_Description__c</fullName>
+        <externalId>false</externalId>
+        <label>File Description</label>
+        <length>1200</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Core_File_Name__c</fullName>
+        <description>File Name field on the IPS File Assignment object.</description>
+        <externalId>false</externalId>
+        <formula>Core_IPS_File_Upload_Master__r.Core_File_Name__c</formula>
+        <label>File Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Core_File_Size__c</fullName>
+        <description>The file size field derived from the IPS File Upload Master and displayed on the IPS File Assignments object.</description>
+        <externalId>false</externalId>
+        <formula>Core_IPS_File_Upload_Master__r.Core_File_Size__c</formula>
+        <label>File Size</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Core_IPS_File_Upload_Master__c</fullName>
+        <externalId>false</externalId>
+        <label>IPS File Upload Master</label>
+        <referenceTo>Core_IPS_File_Upload_Master__c</referenceTo>
+        <relationshipLabel>IPS File Assignments</relationshipLabel>
+        <relationshipName>IPS_File_Assignments</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Core_Support_Org_ID__c</fullName>
+        <externalId>false</externalId>
+        <formula>Core_Supported_Product__r.Core_Product_Organization__r.Core_IPS_Support_Org_Name__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Support Org</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Core_Supported_Product_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Core_Supported_Product__r.Core_Supported_Product_Name__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Supported Product Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Core_Supported_Product__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Supported Product</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Core_IPS_Supported_Product__c.Core_EOIS__c</field>
+                <operation>notEqual</operation>
+                <value>True</value>
+            </filterItems>
+            <infoMessage>1. Search for Supported Product using &quot;All Fields&quot; option
+2. Products marked EOIS are not shown by default (click &quot;Show All Results&quot; to clear filter)</infoMessage>
+            <isOptional>true</isOptional>
+        </lookupFilter>
+        <referenceTo>Core_IPS_Supported_Product__c</referenceTo>
+        <relationshipLabel>IPS File Assignments</relationshipLabel>
+        <relationshipName>IPS_File_Assignments</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Core_Upload_Status__c</fullName>
+        <description>The File Upload Status value derived from the IPS File Upload Master and displayed on the IPS File Assignments object.</description>
+        <externalId>false</externalId>
+        <formula>TEXT( Core_IPS_File_Upload_Master__r.Core_Upload_Status__c )</formula>
+        <label>Upload Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>IPS File Assignment</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>Core_File_Name__c</columns>
+        <columns>Core_File_Description__c</columns>
+        <columns>Core_Supported_Product_Name__c</columns>
+        <columns>Core_Account__c</columns>
+        <columns>Core_Category__c</columns>
+        <columns>Core_Effective_Date__c</columns>
+        <columns>Core_Expiration_Date__c</columns>
+        <columns>Core_File_Size__c</columns>
+        <columns>Core_Supported_Product__c</columns>
+        <columns>Core_IPS_File_Upload_Master__c</columns>
+        <columns>NAME</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>{0000000000}</displayFormat>
+        <label>IPS File Assignment Number</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>IPS File Assignments</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Core_IPS_File_Upload_Master__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Core_Supported_Product__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Core_Account__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CREATEDBY_USER</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CREATED_DATE</customTabListAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>Core_IPS_Supported_Product_Mandatory</fullName>
+        <active>true</active>
+        <description>Supported Product is mandatory for records.</description>
+        <errorConditionFormula>OR(ISBLANK( Core_Supported_Product__c ) ,ISNULL( Core_Supported_Product__c ))</errorConditionFormula>
+        <errorDisplayField>Core_Supported_Product__c</errorDisplayField>
+        <errorMessage>Supported Product can not be blank.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Core_IPS_Upload_Status_Complete_Allowed</fullName>
+        <active>true</active>
+        <description>Cannot create File Assignments until File Upload status is Complete</description>
+        <errorConditionFormula>NOT(ISPICKVAL( Core_IPS_File_Upload_Master__r.Core_Upload_Status__c ,&quot;Complete&quot;))</errorConditionFormula>
+        <errorMessage>File Upload Status needs to be Complete before the Supported Product/Account assignment process</errorMessage>
+    </validationRules>
+</CustomObject>

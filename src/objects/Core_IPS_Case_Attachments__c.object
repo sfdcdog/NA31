@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fieldSets>
+        <fullName>Core_IPS_Global_Search_Field_Result</fullName>
+        <description>This Field set will used to add and remove the Fields from search result</description>
+        <displayedFields>
+            <field>Core_File_Name__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Global Search Field Result</label>
+    </fieldSets>
+    <fields>
+        <fullName>Core_Case__c</fullName>
+        <externalId>false</externalId>
+        <label>Case</label>
+        <referenceTo>Case</referenceTo>
+        <relationshipName>IPS_Case_Attachments</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Core_Category__c</fullName>
+        <externalId>false</externalId>
+        <label>Category</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Analyzer</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>BIOS/Firmware</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Code Sample</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Compiler</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Documentation</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Driver</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Library</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Patches</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Core_FileSizeInBytes__c</fullName>
+        <externalId>false</externalId>
+        <label>File Size InBytes</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Core_FileUploadedBy__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>File Uploaded By</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>IPS_Case_Attachments</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Core_File_Description__c</fullName>
+        <externalId>false</externalId>
+        <label>File Description</label>
+        <length>1200</length>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Core_File_GUID__c</fullName>
+        <externalId>false</externalId>
+        <label>File GUID</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Core_File_Hyperlink__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISPICKVAL(Core_Upload_Status__c, &apos;Complete&apos;),HYPERLINK(Core_File_URL__c ,&apos;Download&apos;,&apos;Self&apos;),TEXT(Core_Upload_Status__c))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>File Download Link</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Core_File_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>File Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Core_File_Size__c</fullName>
+        <externalId>false</externalId>
+        <label>File Size</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Core_File_URL__c</fullName>
+        <externalId>false</externalId>
+        <label>File URL</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Core_IPS_File_Upload__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>IPS File Upload</label>
+        <referenceTo>Core_IPS_File_Upload_Master__c</referenceTo>
+        <relationshipLabel>IPS Case Attachments</relationshipLabel>
+        <relationshipName>IPS_Case_Attachments</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Core_Is_Migrated__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Is Migrated</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Core_Last_Status_Updated_At__c</fullName>
+        <externalId>false</externalId>
+        <label>Upload Status Updated At</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Core_Promote_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Promote Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Failed</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Done</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>In Progress</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Core_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Attachment</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Link</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Core_Upload_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Upload Status</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Complete</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Pending</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Cancelled</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Core_Upload_UserId__c</fullName>
+        <externalId>false</externalId>
+        <label>Upload UserId</label>
+        <length>64</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Core_Upload_idsid__c</fullName>
+        <externalId>false</externalId>
+        <label>Upload idsid</label>
+        <length>64</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>IPS Case Attachment</label>
+    <nameField>
+        <displayFormat>{0000000000}</displayFormat>
+        <label>IPS Case Attachment Number</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>IPS Case Attachments</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Core_Case__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Core_File_GUID__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Core_File_Name__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Core_File_Size__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Core_Upload_Status__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Core_File_URL__c</customTabListAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>Core_IPS_Prevent_Edit_Until_Complete</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+NOT(ISPICKVAL(Core_Upload_Status__c, &apos;Complete&apos;)),
+($Profile.Name &lt;&gt; $Label.Core_System_Admin_Profile_Name),
+($Profile.Name &lt;&gt; $Label.Core_IT_Admin_Profile_Name),
+($Profile.Name &lt;&gt; $Label.Core_Integration_Profile_Name),
+($Profile.Name &lt;&gt; $Label.Core_IPS_DataMigration_ProfileName)
+)</errorConditionFormula>
+        <errorMessage>No Edits allowed until File Upload Status is set to &apos;Complete&apos;</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Core_IPS_Prevent_StatusChng_FromComplete</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+ISPICKVAL(PRIORVALUE( Core_Upload_Status__c ),&quot;Complete&quot;), NOT(ISPICKVAL( Core_Upload_Status__c ,&quot;Complete&quot;))
+)</errorConditionFormula>
+        <errorMessage>Status Change not allowed once set to Complete</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>Core_Attach_File</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Attach File</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>/apex/Core_IPS_File_AttachToCase?id={!Case.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Core_IPS_External_Attach_File</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Attach File</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>{!URLFOR($Site.Prefix+&apos;/Core_IPS_File_AttachToCase?id=&apos;+Case.Id)}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Core_Link_File</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Link File</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>/apex/Core_IPS_File_LinkToCase?id={!Case.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Core_Refresh_to_See_New_Attachments</fullName>
+        <availability>online</availability>
+        <description>Refresh the Page to see Attachment status change. 
+Note - window.location.reload(true) does not work with Related list Hoverlinks</description>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Refresh to See New Attachments</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>window.parent.location.reload(true);</url>
+    </webLinks>
+</CustomObject>

@@ -1,0 +1,2305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>AddToCampaign</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CallHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EmailHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EnableCustomerPortal</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EnablePartnerPortalUser</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EnableSelfService</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ListClean</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Merge</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>NewContact</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>RequestUpdate</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SmsHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewCustomerPortal</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewPartnerPortalUser</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewSelfService</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>QuickStartLayout</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>QuickStartLayout</fullName>
+        <fields>Name</fields>
+        <fields>Title</fields>
+        <fields>AccountId</fields>
+        <fields>Phone</fields>
+        <fields>MobilePhone</fields>
+        <fields>Email</fields>
+        <fields>Core_Primary_Contact__c</fields>
+        <fields>OwnerId</fields>
+        <label>Quick Start Layout</label>
+    </compactLayouts>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fieldSets>
+        <fullName>ContactFieldSet</fullName>
+        <description>Visualforce Page  - Core_IPS_Lookup_Page_Syed</description>
+        <displayedFields>
+            <field>Name</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>FirstName</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>LastName</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Account.Name</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>ContactFieldSet</label>
+    </fieldSets>
+    <fields>
+        <fullName>AccountId</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Account_Department__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account.Owner.Department</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Department</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>AssistantName</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>AssistantPhone</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Birthdate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>CleanStatus</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Core_Account_Primary_City__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account.BillingCity</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Primary City</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Core_Account_Primary_Country__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account.BillingCountry</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Primary Country</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Core_Account_Primary_Postal_Code__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account.BillingPostalCode</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Primary Zip</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Core_Account_Primary_State__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account.BillingState</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Primary state/province</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Core_Account_Primary_Street__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account.BillingStreet</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Primary Street</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Core_Account__c</fullName>
+        <externalId>false</externalId>
+        <formula>AccountId</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Core_Address_Line_1__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Only business address should be entered against a contact</inlineHelpText>
+        <label>Address Line 1</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Core_Alt_Language_Address_1__c</fullName>
+        <description>Alternate language address to be used to enter language other than English.</description>
+        <externalId>false</externalId>
+        <label>Alt Language Address 1</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Core_Alt_Language_Address_2__c</fullName>
+        <description>Alternate language address to be used to enter language other than English.</description>
+        <externalId>false</externalId>
+        <label>Alt Language Address 2</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Core_Alt_Language_City__c</fullName>
+        <description>Alternate language address to be used to enter language other than English.</description>
+        <externalId>false</externalId>
+        <label>Alt Language City</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Core_Alt_Language_Postal_Code__c</fullName>
+        <description>Alternate language address to be used to enter language other than English.</description>
+        <externalId>false</externalId>
+        <label>Alt Language Postal Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Core_Alt_Language_country__c</fullName>
+        <description>Alternate language address to be used to enter language other than English.</description>
+        <externalId>false</externalId>
+        <label>Alt Language country</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Core_Central_Block__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This field is to be used to capture if a contact has been centrally blocked. By default this field will be unchecked.</description>
+        <externalId>false</externalId>
+        <label>Central Block</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Core_City__c</fullName>
+        <externalId>false</externalId>
+        <label>City</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Core_Customer_Excellence_Survey__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Candidate for Customer Excellence Survey</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Core_Deactivated__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This field will be checked when a contact needs to be deactivated by Data Ops</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Check this box if you want to deactivate a contact</inlineHelpText>
+        <label>Deactivation Requested</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Core_Deactivation_Reason__c</fullName>
+        <description>Field to capture contact deactivation reason.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Provide deactivation reason</inlineHelpText>
+        <label>Deactivation Reason</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Duplicate Contact</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Denied Party</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Moved to new company</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Core_Do_Not_Contact__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>If enabled, you may not contact the individual for sales or marketing purposes without their consent or an affirmative request for information/assistance. Authorized comms may include customer service requests and account maintenance.</inlineHelpText>
+        <label>Do Not Contact</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Core_Engagement_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Engagement Name</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Core_Flex_Plus_Primary_Contact_Active__c</fullName>
+        <externalId>false</externalId>
+        <label>Flex Plus Primary Contact Active</label>
+        <length>40</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Core_IPS_Active__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This flag when checked enables the contact to access IPS, only when the associated an Account is not Export Compliance Block and an Intel Support Owner has been identified. When this flag is unchecked the the contact cannot access IPS.</description>
+        <externalId>false</externalId>
+        <label>IPS Active</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Core_IPS_Email_Opt_Out__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>The IPS Email Opt Out flag is the mechanism to allow External Contacts the ability to opt out of all emails sent from IPS.</description>
+        <externalId>false</externalId>
+        <label>IPS Email Opt Out</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Core_IPS_Intel_Support_Owner__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>The Intel Support Owner is the Intel Representative that is in charge of all Pre-Sales Support functionality. This person is typically the technical owner and/or sales representative.</description>
+        <externalId>false</externalId>
+        <label>Intel Support Owner</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>IPS_Supported_Contacts</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Core_IPS_NDA_Acceptance_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>NDA Acceptance Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Core_Import_ID__c</fullName>
+        <description>For the initial load only, this field keeps track of which &quot;import run&quot; a record was inserted or updated from, for quick/easy isolation.</description>
+        <externalId>false</externalId>
+        <label>Import ID</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Core_Job_Function_Code__c</fullName>
+        <description>Field to store the code that corresponds to the Job Function.</description>
+        <externalId>false</externalId>
+        <label>Job Function Code</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Core_Job_Function__c</fullName>
+        <externalId>false</externalId>
+        <label>Job Function</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Administration/Clerical</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Branch Manager</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Business Development</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Consultant/Advisor</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Customer Service</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Database Administrator</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>eBusiness Manager/Developer</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Education and Training</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Engineering</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Communications Engineer</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Customer Quality/Support Engineer</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Facilities Management and Maintenance</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Finance</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Hardware Engineer</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Healthcare Professional</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Human Resource</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Information Management Professional</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Information Technology</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>IT Manager</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Network Engineer</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Legal</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Warehousing, Transportation and Conveyan</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Communications/Public Relations</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Media and Design</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Marketing Executive</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Marketing Manager</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Manufacturing</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Operations</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other - Engineering</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other - Information Technology</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other - Sales and Marketing</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Owner/General Manager/CEO/CFO/COO</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Project Management</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Purchasing</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Research and Development</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Retail Sales Person</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sales and Marketing</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Security</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sales &amp; IT</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Owners &amp; Sales</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sales &amp; Technical manager</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sales &amp; Marketing Engineer</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sales Executive</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sales Manager</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Software Engineer</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Solutions Architect</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Technical Integrator</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Web Developer/Service Provider</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Core_Language__c</fullName>
+        <externalId>false</externalId>
+        <label>Language</label>
+        <length>40</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Core_Lead_Conversion_Flag__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Lead Conversion Flag</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Core_LinkedIN__c</fullName>
+        <description>Linkedin link</description>
+        <externalId>false</externalId>
+        <label>LinkedIN</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Core_Local_First_Name__c</fullName>
+        <description>This field to be used to get inputs on Local Name of contact (if any)</description>
+        <externalId>false</externalId>
+        <label>Local First Name</label>
+        <length>120</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Core_Local_Last_Name__c</fullName>
+        <description>This field to be used to get inputs on Local Name of contact (if any).</description>
+        <externalId>false</externalId>
+        <label>Local Last Name</label>
+        <length>120</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Core_Login_Id__c</fullName>
+        <description>Field to capture login Ids of contact.</description>
+        <externalId>false</externalId>
+        <label>Login Id</label>
+        <length>4000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>2</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Core_Old_Email__c</fullName>
+        <externalId>false</externalId>
+        <label>Old Email</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Core_Other_Social_Information__c</fullName>
+        <externalId>false</externalId>
+        <label>Other Social Information</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Core_Points_Benefit_Admin__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Points Benefit Admin</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Core_Preferred_Communication__c</fullName>
+        <description>Field to capture communication preference of contact.</description>
+        <externalId>false</externalId>
+        <label>Preferred Communication</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>None</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Email</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Face to Face</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Post (Letter)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Telephone</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Core_Primary_Contact__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Primary Contact</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Core_State__c</fullName>
+        <externalId>false</externalId>
+        <label>State</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Core_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <length>40</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Core_Support_Owner__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Support Owner</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Contacts</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Core_Twitter__c</fullName>
+        <description>Twitter handle of Contact</description>
+        <externalId>false</externalId>
+        <label>Twitter</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Core_Zip_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Zip/Postal Code</label>
+        <length>10</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Core_eRPM_Person_Id__c</fullName>
+        <externalId>false</externalId>
+        <label>eRPM Person Id</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Department</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>DoNotCall</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Email</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Fax</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>HasOptedOutOfEmail</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>HasOptedOutOfFax</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>HomePhone</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Jigsaw</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Languages__c</fullName>
+        <externalId>false</externalId>
+        <label>Languages</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LastCURequestDate</fullName>
+    </fields>
+    <fields>
+        <fullName>LastCUUpdateDate</fullName>
+    </fields>
+    <fields>
+        <fullName>LeadSource</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Level__c</fullName>
+        <externalId>false</externalId>
+        <label>Level</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Secondary</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Tertiary</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Primary</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>MailingAddress</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>MobilePhone</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Name</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>OtherAddress</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>OtherPhone</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Partner_engagements__c</fullName>
+        <externalId>false</externalId>
+        <label>Partner engagements</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>CSM</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Retail</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Phone</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>ReportsToId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Title</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <listViews>
+        <fullName>AllContacts</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CONTACT.TITLE</columns>
+        <columns>CONTACT.PHONE1</columns>
+        <columns>CONTACT.EMAIL</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Contacts</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>BirthdaysThisMonth</fullName>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CONTACT.BIRTHDATE</field>
+            <operation>equals</operation>
+            <value>THIS_MONTH</value>
+        </filters>
+        <label>Birthdays This Month</label>
+    </listViews>
+    <listViews>
+        <fullName>MyContacts</fullName>
+        <filterScope>Mine</filterScope>
+        <label>My Contacts</label>
+    </listViews>
+    <listViews>
+        <fullName>NewLastWeek</fullName>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CONTACT.CREATED_DATE</field>
+            <operation>equals</operation>
+            <value>LAST_WEEK</value>
+        </filters>
+        <label>New Last Week</label>
+    </listViews>
+    <listViews>
+        <fullName>NewThisWeek</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CONTACT.TITLE</columns>
+        <columns>CONTACT.PHONE1</columns>
+        <columns>CONTACT.EMAIL</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CONTACT.CREATED_DATE</field>
+            <operation>equals</operation>
+            <value>THIS_WEEK</value>
+        </filters>
+        <label>New This Week</label>
+    </listViews>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Core_Do_Not_Contact</fullName>
+        <active>true</active>
+        <description>If Do Not Contact flag is selected</description>
+        <label>Contact Layout – Do Not Contact</label>
+        <picklistValues>
+            <picklist>Core_Deactivation_Reason__c</picklist>
+            <values>
+                <fullName>Denied Party</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Duplicate Contact</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Moved to new company</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Core_Job_Function__c</picklist>
+            <values>
+                <fullName>Administration%2FClerical</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Branch Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Business Development</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Communications Engineer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Communications%2FPublic Relations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consultant%2FAdvisor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Quality%2FSupport Engineer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Database Administrator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Education and Training</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Engineering</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Facilities Management and Maintenance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Finance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hardware Engineer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Healthcare Professional</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Human Resource</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IT Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Information Management Professional</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Information Technology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Legal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manufacturing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing Executive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Media and Design</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Network Engineer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Operations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other - Engineering</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other - Information Technology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other - Sales and Marketing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Owner%2FGeneral Manager%2FCEO%2FCFO%2FCOO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Owners %26 Sales</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Project Management</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Purchasing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Research and Development</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retail Sales Person</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales %26 IT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales %26 Marketing Engineer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales %26 Technical manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Executive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales and Marketing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Security</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Software Engineer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Solutions Architect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Technical Integrator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Warehousing%2C Transportation and Conveyan</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web Developer%2FService Provider</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>eBusiness Manager%2FDeveloper</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Core_Preferred_Communication__c</picklist>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Face to Face</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>None</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Post %28Letter%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Telephone</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Level__c</picklist>
+            <values>
+                <fullName>Primary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Secondary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tertiary</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Name</picklist>
+            <values>
+                <fullName>Dr%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mr%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mrs%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ms%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prof%2E</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Partner_engagements__c</picklist>
+            <values>
+                <fullName>CSM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retail</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Core_Intel_Contact</fullName>
+        <active>true</active>
+        <description>Standard Contact</description>
+        <label>Intel Contact</label>
+        <picklistValues>
+            <picklist>Core_Deactivation_Reason__c</picklist>
+            <values>
+                <fullName>Denied Party</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Duplicate Contact</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Moved to new company</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Core_Job_Function__c</picklist>
+            <values>
+                <fullName>Administration%2FClerical</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Branch Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Business Development</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Communications Engineer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Communications%2FPublic Relations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consultant%2FAdvisor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Quality%2FSupport Engineer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Database Administrator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Education and Training</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Engineering</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Facilities Management and Maintenance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Finance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hardware Engineer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Healthcare Professional</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Human Resource</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IT Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Information Management Professional</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Information Technology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Legal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manufacturing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing Executive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Media and Design</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Network Engineer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Operations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other - Engineering</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other - Information Technology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other - Sales and Marketing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Owner%2FGeneral Manager%2FCEO%2FCFO%2FCOO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Owners %26 Sales</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Project Management</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Purchasing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Research and Development</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retail Sales Person</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales %26 IT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales %26 Marketing Engineer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales %26 Technical manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Executive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales and Marketing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Security</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Software Engineer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Solutions Architect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Technical Integrator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Warehousing%2C Transportation and Conveyan</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web Developer%2FService Provider</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>eBusiness Manager%2FDeveloper</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Core_Preferred_Communication__c</picklist>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Face to Face</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>None</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Post %28Letter%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Telephone</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Level__c</picklist>
+            <values>
+                <fullName>Primary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Secondary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tertiary</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Name</picklist>
+            <values>
+                <fullName>Dr%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mr%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mrs%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ms%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prof%2E</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Partner_engagements__c</picklist>
+            <values>
+                <fullName>CSM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retail</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Outlook_contact</fullName>
+        <active>true</active>
+        <description>SFO contact record type</description>
+        <label>Outlook contact</label>
+        <picklistValues>
+            <picklist>Core_Deactivation_Reason__c</picklist>
+            <values>
+                <fullName>Denied Party</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Duplicate Contact</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Moved to new company</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Core_Job_Function__c</picklist>
+            <values>
+                <fullName>Administration%2FClerical</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Branch Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Business Development</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Communications Engineer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Communications%2FPublic Relations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consultant%2FAdvisor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Quality%2FSupport Engineer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Database Administrator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Education and Training</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Engineering</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Facilities Management and Maintenance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Finance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hardware Engineer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Healthcare Professional</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Human Resource</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IT Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Information Management Professional</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Information Technology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Legal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manufacturing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing Executive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Media and Design</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Network Engineer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Operations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other - Engineering</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other - Information Technology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other - Sales and Marketing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Owner%2FGeneral Manager%2FCEO%2FCFO%2FCOO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Owners %26 Sales</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Project Management</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Purchasing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Research and Development</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retail Sales Person</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales %26 IT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales %26 Marketing Engineer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales %26 Technical manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Executive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales and Marketing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Security</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Software Engineer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Solutions Architect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Technical Integrator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Warehousing%2C Transportation and Conveyan</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web Developer%2FService Provider</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>eBusiness Manager%2FDeveloper</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Core_Preferred_Communication__c</picklist>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Face to Face</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>None</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Post %28Letter%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Telephone</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Level__c</picklist>
+            <values>
+                <fullName>Primary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Secondary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tertiary</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Name</picklist>
+            <values>
+                <fullName>Dr%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mr%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mrs%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ms%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prof%2E</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Partner_engagements__c</picklist>
+            <values>
+                <fullName>CSM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retail</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Standard</fullName>
+        <active>true</active>
+        <description>Standard Contact</description>
+        <label>Standard</label>
+        <picklistValues>
+            <picklist>Core_Deactivation_Reason__c</picklist>
+            <values>
+                <fullName>Denied Party</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Duplicate Contact</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Moved to new company</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Core_Job_Function__c</picklist>
+            <values>
+                <fullName>Administration%2FClerical</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Branch Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Business Development</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Communications Engineer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Communications%2FPublic Relations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consultant%2FAdvisor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Quality%2FSupport Engineer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Database Administrator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Education and Training</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Engineering</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Facilities Management and Maintenance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Finance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hardware Engineer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Healthcare Professional</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Human Resource</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IT Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Information Management Professional</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Information Technology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Legal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manufacturing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing Executive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Media and Design</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Network Engineer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Operations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other - Engineering</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other - Information Technology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other - Sales and Marketing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Owner%2FGeneral Manager%2FCEO%2FCFO%2FCOO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Owners %26 Sales</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Project Management</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Purchasing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Research and Development</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retail Sales Person</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales %26 IT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales %26 Marketing Engineer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales %26 Technical manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Executive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales and Marketing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Security</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Software Engineer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Solutions Architect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Technical Integrator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Warehousing%2C Transportation and Conveyan</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web Developer%2FService Provider</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>eBusiness Manager%2FDeveloper</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Core_Preferred_Communication__c</picklist>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Face to Face</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>None</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Post %28Letter%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Telephone</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Level__c</picklist>
+            <values>
+                <fullName>Primary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Secondary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tertiary</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Name</picklist>
+            <values>
+                <fullName>Dr%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mr%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mrs%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ms%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prof%2E</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Partner_engagements__c</picklist>
+            <values>
+                <fullName>CSM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retail</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>FULL_NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CONTACT.EMAIL</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CONTACT.PHONE1</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CONTACT.PHONE3</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>FULL_NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CONTACT.EMAIL</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Core_Primary_Contact__c</lookupDialogsAdditionalFields>
+        <lookupFilterFields>CONTACT.FIRST_NAME</lookupFilterFields>
+        <lookupFilterFields>CONTACT.LAST_NAME</lookupFilterFields>
+        <lookupFilterFields>ACCOUNT.NAME</lookupFilterFields>
+        <lookupPhoneDialogsAdditionalFields>FULL_NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTACT.EMAIL</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTACT.PHONE1</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTACT.PHONE3</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>CONTACT.FIRST_NAME</searchFilterFields>
+        <searchFilterFields>CONTACT.LAST_NAME</searchFilterFields>
+        <searchFilterFields>ACCOUNT.NAME</searchFilterFields>
+        <searchResultsAdditionalFields>FULL_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CONTACT.EMAIL</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CONTACT.PHONE1</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CONTACT.PHONE3</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+</CustomObject>

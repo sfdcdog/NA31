@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>Core_EOIS__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Used to expire assets related to this Product</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Check this to expire related assets</inlineHelpText>
+        <label>EOIS</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Core_Flag_Status__c</fullName>
+        <description>This is to show the access setting for each Supported Product</description>
+        <externalId>false</externalId>
+        <inlineHelpText>A value is mandatory for this field.</inlineHelpText>
+        <label>Access Flag</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Par Hidden</fullName>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>Approval Required</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Auto Approve</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Core_IPS_Code_Name__c</fullName>
+        <description>Updated through a Workflow Rule. Used in SOSL (Product Search). Not shown on layouts.</description>
+        <externalId>false</externalId>
+        <label>Code Name for Search</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Core_IPS_Duplicate_Supp_Product_Warning__c</fullName>
+        <externalId>false</externalId>
+        <formula>Core_Product_Organization__r.Name  &amp;  Core_Supported_Product_Name__c</formula>
+        <label>Duplicate Supp Product Warning</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Core_Platform_Name__c</fullName>
+        <description>Comma separated list of Platform values as derived from the Product Master Data.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Derived from the Product master record where available. Read only field.</inlineHelpText>
+        <label>Platform Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Core_Product_Application__c</fullName>
+        <description>This is the description for the Intel Support Org that supports this product</description>
+        <externalId>false</externalId>
+        <formula>Core_Product_Organization__r.Core_Organization_Description__c</formula>
+        <inlineHelpText>This is the description for the Intel Support Org that supports this product</inlineHelpText>
+        <label>Product Focus Area</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Core_Product_EPM_ID__c</fullName>
+        <description>Shown on Save. Inherited from the Product Master record. Cannot be edited.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Shown on Save. Inherited from the Product Master record. Cannot be edited.</inlineHelpText>
+        <label>Product EPM ID</label>
+        <length>128</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Core_Product_Organization__c</fullName>
+        <externalId>false</externalId>
+        <label>Support Org ID</label>
+        <referenceTo>Core_IPS_Product_Organization__c</referenceTo>
+        <relationshipLabel>Supported Products</relationshipLabel>
+        <relationshipName>Supported_Products</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Core_Support_Launch_Date__c</fullName>
+        <description>A read/write field that can be edited by the Support Org admin to capture the start of the Support life cycle of a particular product. The value varies by Support Org. This is not the same as the Product Launch Date which comes from Enterprise product data.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>A read/write field that can be edited by a Support Org admin to capture the start of the Support life cycle of a product. The value varies by Support Org.</inlineHelpText>
+        <label>Support Launch Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Core_Support_Org_Name__c</fullName>
+        <description>Support Org Name to be used on Asset layouts.</description>
+        <externalId>false</externalId>
+        <formula>Core_Product_Organization__r.Core_IPS_Support_Org_Name__c</formula>
+        <label>Support Org Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Core_Supported_Product_Alias__c</fullName>
+        <description>Field editable by Support Org Admins. Add nicknames or other easily recognizable names to enable search on Case.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Editable by the Support Org Admin. Add nicknames or easily recognizable names to enable search on Case.</inlineHelpText>
+        <label>Alias</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Core_Supported_Product_Name__c</fullName>
+        <description>Identical to EPM Product Name. Copied from EPM Product Name on Save. Cannot be edited.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Copied from EPM Product Name on Save. Cannot be edited.</inlineHelpText>
+        <label>Supported Product Name</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Core_Supported_Product_Tag__c</fullName>
+        <description>A free form text field used by Support Org Admins to group products around security sensitivity within their Product Life Cycle phase. Possible values include “Early Access”,  “Hot” or “Focus”, “Pre-Launch”, “Post-Launch”, “Revenue”, “Sustaining” etc.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Used by Support Org Admins to group products around security sensitivity within their Product Life Cycle phase. Possible values include “Early Access”,  “Hot” or “Focus”, “Pre-Launch”, “Post-Launch”, “Revenue”, “Sustaining”.</inlineHelpText>
+        <label>Search/Reporting Tag</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Core_Unique_Supported_Product__c</fullName>
+        <caseSensitive>true</caseSensitive>
+        <description>Hidden field. 
+Contains the concatenation of Supported Org ID (SFDC ID) and the Product EPM ID. Case sensitive.
+Set to unique to ensure a single EPM ID can be added to a Support Org only once.</description>
+        <externalId>false</externalId>
+        <label>Unique Supported Product</label>
+        <length>128</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <label>Supported Product</label>
+    <nameField>
+        <displayFormat>SP-{0000000000}</displayFormat>
+        <label>Supported Product ID</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Supported Products</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Core_Product_EPM_ID__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Core_Supported_Product_Name__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Core_Platform_Name__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Core_Flag_Status__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Core_EOIS__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Core_Support_Org_Name__c</customTabListAdditionalFields>
+        <excludedStandardButtons>New</excludedStandardButtons>
+        <excludedStandardButtons>ChangeOwner</excludedStandardButtons>
+        <excludedStandardButtons>Accept</excludedStandardButtons>
+        <lookupDialogsAdditionalFields>Core_Supported_Product_Name__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Core_Product_Organization__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Core_Flag_Status__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Core_Support_Org_Name__c</lookupDialogsAdditionalFields>
+        <lookupFilterFields>Core_Supported_Product_Name__c</lookupFilterFields>
+        <lookupFilterFields>Core_Supported_Product_Alias__c</lookupFilterFields>
+        <lookupFilterFields>Core_Support_Org_Name__c</lookupFilterFields>
+        <searchFilterFields>Core_Product_Organization__c</searchFilterFields>
+        <searchFilterFields>Core_Flag_Status__c</searchFilterFields>
+        <searchFilterFields>Core_Supported_Product_Name__c</searchFilterFields>
+        <searchResultsAdditionalFields>Core_Product_EPM_ID__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Core_Supported_Product_Name__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Core_Supported_Product_Alias__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Core_Flag_Status__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Core_EOIS__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Core_Product_Organization__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Core_Support_Org_Name__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>Core_IPS_Prevent_EOIS_Removal</fullName>
+        <active>true</active>
+        <description>This validation rule will prevent the clearing of the EOIS checkbox on a Supported Product.  We are preventing this in R1 because of the impact it can have on MAP/PAR</description>
+        <errorConditionFormula>AND(Core_EOIS__c=FALSE, PRIORVALUE(Core_EOIS__c)=TRUE)</errorConditionFormula>
+        <errorMessage>Once set to EOIS, you cannot clear the EOIS value from a Supported Product.</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>Core_EDO_under_Sub_Cat</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>EDO under Sub Cat</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>https://intel--crmsb14.cs21.my.salesforce.com/00Oq0000000SKiw</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Core_Supported_Product_Make_EOIS</fullName>
+        <availability>online</availability>
+        <description>This button will change the EOIS value from FALSE to TRUE.</description>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>EOIS Supported Product</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/19.0/connection.js&quot;)} 
+
+// Get the record
+var SP = new sforce.SObject(&quot;Core_IPS_Supported_Product__c&quot;); 
+SP.id = &quot;{!Core_IPS_Supported_Product__c.Id}&quot;; 
+
+// If current status is EOIS=TRUE
+if(&quot;{!Core_IPS_Supported_Product__c.Core_EOIS__c}&quot; === &quot;1&quot;) {
+ alert(&quot;Supported Product is already set to EOIS. No change will be made.&quot;);
+}
+
+// current status is EOIS=FALSE
+else {
+
+function confirmCancel() {
+ //ask if they are sure 
+ var isCancel = confirm(&quot;**WARNING** Setting to EOIS can only be undone by KTBR!  Are you sure that you want to set this Supported Product to EOIS?&quot;);
+ if (isCancel) return true; 
+ return false; 
+}
+
+//if they say OK then save the change
+if (confirmCancel()) {
+ // change status to EOIS
+ SP.Core_EOIS__c = &quot;1&quot;;
+ // update the record
+ result = sforce.connection.update([SP]);
+ //reload the page to show the updated status if the save was successful
+ window.location.reload();
+}
+}</url>
+    </webLinks>
+</CustomObject>
