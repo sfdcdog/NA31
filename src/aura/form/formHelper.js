@@ -30,8 +30,10 @@
     createExpense: function(component, expense) {
         this.upsertExpense(component, expense, function(a) {
             var expenses = component.get("v.expenses");
+            console.log("Expenses before 'create': " + JSON.stringify(expenses));
             expenses.push(a.getReturnValue());
             component.set("v.expenses", expenses);
+            console.log("Expenses before 'create': " + JSON.stringify(expenses));
             this.updateTotal(component);
         });
     },

@@ -21,13 +21,19 @@
     },
 
     createExpense: function(component, event, helper) {
+        //Obtaining amount value inputed.
         var amtField = component.find("amount");
         var amt = amtField.get("v.value");
+
+        //Error Handling
         if (isNaN(amt) || amt == '') {
+            
+            //Set Errors
             amtField.set("v.errors", [{
                 message: "Enter an expense amount."
             }]);
         } else {
+        	//process when there are no errors
             amtField.set("v.errors", null);
             var newExpense = component.get("v.newExpense");
             helper.createExpense(component, newExpense);
