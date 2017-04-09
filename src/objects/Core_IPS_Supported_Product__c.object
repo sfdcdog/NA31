@@ -21,10 +21,6 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>Follow</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
     </actionOverrides>
@@ -75,26 +71,28 @@
         <externalId>false</externalId>
         <inlineHelpText>A value is mandatory for this field.</inlineHelpText>
         <label>Access Flag</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Par Hidden</fullName>
-                <default>true</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Approval Required</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Auto Approve</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Par Hidden</fullName>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>Approval Required</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Auto Approve</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Core_IPS_Code_Name__c</fullName>

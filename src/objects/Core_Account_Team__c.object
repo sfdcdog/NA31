@@ -21,10 +21,6 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>Follow</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>List</actionName>
         <type>Default</type>
     </actionOverrides>
@@ -61,29 +57,31 @@
         <fullName>Core_Account_Access__c</fullName>
         <externalId>false</externalId>
         <label>Account Access</label>
-        <picklist>
-            <picklistValues>
-                <fullName>None</fullName>
-                <default>true</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Read</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Edit</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>All</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>None</fullName>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>Read</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Edit</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>All</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Core_Account__c</fullName>
@@ -103,29 +101,31 @@
         <fullName>Core_Case_Access__c</fullName>
         <externalId>false</externalId>
         <label>Case Access</label>
-        <picklist>
-            <picklistValues>
-                <fullName>None</fullName>
-                <default>true</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Read</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Edit</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>All</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>None</fullName>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>Read</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Edit</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>All</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Core_IPS_Access_For_User__c</fullName>
@@ -143,29 +143,31 @@
         <fullName>Core_Opportunity_Access__c</fullName>
         <externalId>false</externalId>
         <label>Opportunity Access</label>
-        <picklist>
-            <picklistValues>
-                <fullName>None</fullName>
-                <default>true</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Read</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Edit</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>All</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>None</fullName>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>Read</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Edit</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>All</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Core_Team_Member__c</fullName>
@@ -183,29 +185,31 @@
         <fullName>Core_Team_Role__c</fullName>
         <externalId>false</externalId>
         <label>Team Role</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Team Member (100%)</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Technical Owner (100%)</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Contributor (50%)</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Viewer (0%)</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Team Member (100%)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Technical Owner (100%)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Contributor (50%)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Viewer (0%)</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <label>Account Team</label>
     <listViews>
