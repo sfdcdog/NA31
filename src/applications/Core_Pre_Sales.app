@@ -2,6 +2,7 @@
 <CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
     <defaultLandingTab>standard-Case</defaultLandingTab>
     <description>IPS Pre-Sales</description>
+    <formFactors>Large</formFactors>
     <label>Pre-Sales</label>
     <tab>Core_IPS_Product_Organization__c</tab>
     <tab>Core_IPS_Project__c</tab>
