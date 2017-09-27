@@ -1,0 +1,99 @@
+<apex:page controller="CaseProcessController" tabstyle="Case" sidebar="false">
+    <script type="text/javascript">
+        function selectAllCheckboxes(obj, receivedInputID) {
+            console.log('Object: '+obj);
+            console.log('input Id: '+receivedInputID);
+            var inputCheckBox = document.getElementsByTagName("input");
+            console.log('CheckBox Length:   '+inputCheckBox[0].id);
+            for (var i = 0; i < inputCheckBox.length; i++) {
+                //console.log('Loop count: '+i);
+                console.log('Obj value: '+JSON.stringify(obj));
+                console.log('index of value: '+inputCheckBox[i].id.indexOf(receivedInputID));
+                if (inputCheckBox[i].id.indexOf(receivedInputID) != -1) {
+                    inputCheckBox[i].checked = obj.checked;
+                }
+            }
+        }
+
+        function processSelect(){
+            console.log('yo');
+            renderpgblk1();
+        }
+        
+        function setBoolean(receivedId){
+            if(receivedId == 'fieldHistryTglswitch'){
+                console.log('yo');
+                trackFields();
+            }
+            if(receivedId == 'contactTglswitch'){
+                console.log('yo');
+                avoidDups();
+            }
+        }
+    </script>
+    <apex:stylesheet value="{!$Resource.caseProcessCSS}" />
+    <apex:form >
+        <apex:actionFunction name="renderpgblk1" action="{!procType}" />
+        <apex:pageBlock id="pgblk0" rendered="{!processSelectpgblk}">
+            <apex:pageBlockSection >
+                <apex:panelGrid columns="2" cellpadding="14" cellspacing="4" >
+                    <!--Setting font weight and font size-->
+                    <apex:outputLabel value="Select Process Type: " for="processList" styleClass="processListLabel"/>
+                    <apex:selectList value="{!processType}" id="processList" multiSelect="false" size="1" onchange="processSelect()" styleClass="processList">
+                        <apex:selectOptions value="{!processTypes}" />
+                    </apex:selectList>  
+                </apex:panelGrid>               
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+        
+        <apex:actionFunction name="avoidDups" action="{!avoidContactDuplicates}" reRender="false"/>
+        <apex:actionFunction name="trackFields" action="{!trackFieldHistory}" reRender="false" />
+        <apex:pageBlock id="pgblk1" rendered="{!createContactspgblk}">
+            <apex:pageBlockSection columns="1">
+            <div align="left">
+                <label for="contactTglswitch" style="float:left; font-weight: bold; font-size:110%; padding-top: .05cm; padding-right: .15cm;">Avoid Duplicates:   </label>
+                <div class="divider"/>
+                <label class="switch" id="contactTglswitch" style="float:left;">
+                    <input class="switch-input" type="checkbox" onchange="setBoolean('contactTglswitch');" />
+                    <span class="switch-label" data-on="Yes" data-off="No"></span> 
+                    <span class="switch-handle"></span> 
+                </label>
+            </div>
+            <div align="left">
+                <label for="fieldHistryTglswitch" style="float:left; font-weight: bold; font-size:110%; padding-top: .05cm; padding-right: .15cm;">Track Field History:   </label>
+                <div class="divider"/>
+                <label class="switch" id="fieldHistryTglswitch" style="float:left;">
+                    <input class="switch-input" type="checkbox"  onclick="setBoolean('fieldHistryTglswitch');"/>
+                    <span class="switch-label" data-on="Yes" data-off="No"></span> 
+                    <span class="switch-handle"></span> 
+                </label>
+            </div>
+                <apex:pageBlockTable value="{!casesforContactCreate}" var="case" id="caseTblPgBlk1" styleClass="caseslctTable">
+                    <apex:column width="30 px" styleClass="chkbxStyle">
+                        <apex:facet name="header">
+                            <apex:inputCheckbox onclick="selectAllCheckboxes(this,'caseChkbxPgBlk1')" />
+                        </apex:facet>
+                        <apex:inputCheckbox value="{!case.selected}" id="casechkbxpgblk1" />
+                    </apex:column>
+                    <!--<apex:column headerValue="CaseNumber" value="{!case.CaseNumber}" styleClass="csRowStyle"/>-->
+                    <!--<apex:column headerValue="Case Id" value="{!case.Id}" styleClass="csRowStyle"/>-->
+                    <apex:column headerValue="CaseNumber" styleClass="csRowStyle">
+                        <a href="{!case.Id}" id="{!case.Id}" onblur="LookupHoverDetail.getHover('{!case.Id}').hide();" onfocus="LookupHoverDetail.getHover('{!case.Id}', '/{!case.Id}/m?retURL=%2F{!case.Id}&isAjaxRequest=1').show();" onmouseout="LookupHoverDetail.getHover('{!case.Id}').hide();" onmouseover="LookupHoverDetail.getHover('{!case.Id}', '/{!case.Id}/m?retURL=%2F{!case.Id}&isAjaxRequest=1').show();">{!case.caseNumber}</a>
+                    </apex:column>
+                    <apex:column headerValue="Account" value="{!case.Account}" styleClass="csRowStyle"/>
+                    <apex:column headerValue="Assset" value="{!case.Asset}" styleClass="csRowStyle"/>
+                    <apex:column headerValue="Description" value="{!case.Description}" styleClass="csRowStyle"/>
+                    <apex:column headerValue="Status" value="{!case.Status}" styleClass="csRowStyle" />
+                    <apex:column headerValue="Subject" value="{!case.Subject}" styleClass="csRowStyle"/>
+                    <apex:column headerValue="Type" value="{!case.Type}" styleClass="csRowStyle"/>
+                    <apex:column headerValue="Owner" value="{!case.Owner}" styleClass="csRowStyle"/>
+                    <apex:column headerValue="Created By" value="{!case.CreatedBy}" styleClass="csRowStyle"/>
+                </apex:pageBlockTable>
+            </apex:pageBlockSection> 
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Process Cases" action="{!processCasesSelected}" styleClass="btnStyle"></apex:commandButton>
+                               
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

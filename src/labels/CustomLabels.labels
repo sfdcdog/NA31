@@ -2285,6 +2285,14 @@ You may be contacted by a representative from the Global Export Compliance team 
         <value>aceOppID</value>
     </labels>
     <labels>
+        <fullName>DI_caseProcesses</fullName>
+        <categories>Case, DI</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Types of Case Processes for DI</shortDescription>
+        <value>None;CreateContacts;UpdateCase</value>
+    </labels>
+    <labels>
         <fullName>EAASCertificate_Name</fullName>
         <language>en_US</language>
         <protected>false</protected>

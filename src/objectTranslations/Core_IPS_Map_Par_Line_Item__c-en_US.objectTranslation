@@ -137,6 +137,13 @@
         <label><!-- isPARRequest --></label>
         <name>Core_isPARRequest__c</name>
     </fields>
+    <layouts>
+        <layout>test</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
     <recordTypes>
         <label><!-- MAP --></label>
         <name>MAP</name>

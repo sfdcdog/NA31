@@ -1,0 +1,28 @@
+<!---<apex:page action="{!URLFOR($Action.Account.List, $ObjectType.Account)}"/>-->
+<apex:page standardController="Account" extensions="TestVF">
+    <b>{!account.Name}</b>
+    <script>
+        function rerenderTp(){
+            console.log('comeshere');
+            rerenderTop();
+        }
+        function rerenderBt(){
+            console.log('comeshere1');
+            rerenderBottom();    
+        }
+    </script>
+    
+    <apex:form >
+        <!--https://salesforce.stackexchange.com/questions/4461/rerender-outputpanel-from-javascript-function-in-visualforce-->
+        <apex:actionFunction name="rerenderTop" reRender="actreg1"/>
+        <apex:actionFunction name="rerenderBottom" rerender="actreg1" />
+        <apex:pageBlock id="actreg1">
+            <apex:inputText label="New: " value="{!inputTextValue3}"/>
+        
+            <apex:inputText label="Name: " value="{!inputTextValue2}" onchange="rerenderTp()"/>
+        
+            <apex:inputText label="Name: " value="{!inputTextValue}" onchange="rerenderBt()"/>
+
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

@@ -115,6 +115,28 @@
         <trackTrending>false</trackTrending>
     </fields>
     <fields>
+        <fullName>DiscountType__c</fullName>
+        <externalId>false</externalId>
+        <label>Discount Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>All Products</fullName>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>Approved Products</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
         <fullName>ExpectedRevenue</fullName>
         <trackTrending>false</trackTrending>
     </fields>
@@ -246,6 +268,16 @@
         <label>Closing This Month</label>
     </listViews>
     <listViews>
+        <fullName>Default_Opportunity_Pipeline</fullName>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>OPPORTUNITY.CLOSE_DATE</field>
+            <operation>greaterOrEqual</operation>
+            <value>LAST_N_MONTHS:3</value>
+        </filters>
+        <label>Opportunity Pipeline</label>
+    </listViews>
+    <listViews>
         <fullName>MyOpportunities</fullName>
         <filterScope>Mine</filterScope>
         <label>My Opportunities</label>
@@ -313,6 +345,28 @@
         <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>Private</sharingModel>
+    <webLinks>
+        <fullName>ApplyDiscount</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Apply Discount</masterLabel>
+        <openType>sidebar</openType>
+        <page>opportunityapplydiscount</page>
+        <protected>false</protected>
+    </webLinks>
+    <webLinks>
+        <fullName>CreateInvoice</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Create Invoice</masterLabel>
+        <openType>sidebar</openType>
+        <page>opportunitycreateinvoice</page>
+        <protected>false</protected>
+    </webLinks>
     <webLinks>
         <fullName>DeliveryStatus</fullName>
         <availability>online</availability>

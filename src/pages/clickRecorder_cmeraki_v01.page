@@ -1,0 +1,416 @@
+<apex:page id="pg_00" controller="ClickContoller_cmeraki_v01" sidebar="false">
+    <!-- showHeader="false" standardStylesheets="false" -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js" />
+    <!-- <apex:includeScript value="{!$Resource.Jquery11}"/> //https://jsfiddle.net/gyrocode/07Lrpqm7/, https://www.gyrocode.com/articles/jquery-datatables-how-to-submit-all-pages-form-data/, https://www.gyrocode.com/projects/jquery-datatables-checkboxes, https://jsfiddle.net/gyrocode/07Lrpqm7//-->
+    <!-- <apex:includeScript value="{!Urlfor($Resource.Datatables,'jquery-ui.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.Datatables,'jquery.dataTables.js')}"/>
+    <apex:stylesheet value="{!URLFOR($Resource.Datatables,'jquery.dataTables.css')}"/> -->
+    <script src="https://cdn.datatables.net/1.10.15/js/dataTables.jqueryui.min.js" />
+    <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js" />
+    <script src="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" />
+    <script type="text/javascript">
+        $( document ).ready(function(){             
+                 constructTable();         
+                });
+                
+                var  clicksLst = '';
+
+                function createDataTable(TableID,cols2,result){             
+                    var table = $("."+TableID).DataTable({
+                     "paginate": true,
+                     "scrollY": 242,
+                     "bFilter": true,
+                     "responsive": true,
+                     "columns": cols2,
+                     "aaData": result
+                       
+                     });
+                    console.log('tbls'+JSON.stringify(table.context[0].aoColumns[0]));
+                }
+                
+                
+                function constructTable(){
+                    
+                    Visualforce.remoting.Manager.invokeAction(
+                    '{!$RemoteAction.ClickContoller_cmeraki_v01.getclicksList}',
+                     
+                    function(result, event){
+                        //console.log('RESULT:   '+JSON.stringify(result));
+                        console.log('EVENT:   '+Object.getOwnPropertyNames(event));
+                        console.log('statuscode:  '+event.statusCode);
+                        console.log('type:  '+event.type);
+                        console.log('tid:  '+event.tid);
+                        console.log('ref:  '+event.ref);
+                        console.log('action: '+event.action);
+                        console.log('method:  '+event.method);
+                        console.log('result:  '+JSON.stringify(event.result));
+                        console.log('status:  '+event.status);
+        
+                        if(result.length != 0){
+                            var cols = [
+                                        {"mDataProp":"selected","sTitle":"","defaultContent":""},
+                                        {"mDataProp":"clickRecord.Name","sTitle":"Click Rec Number","defaultContent":""},
+                                        {"mDataProp":"clickRecord.Clicked_By_User__c","sTitle":"Clicked By","defaultContent":""}, 
+                                        {"mDataProp":"clickRecord.TimeStamp__c","sTitle":"TimeStamp","defaultContent":""}, 
+                                        {"mDataProp":"clickRecord.LogFile__c","sTitle":"Log File","defaultContent":""}
+                                        ];                
+                            
+                            var cols2 = [{
+                                        'targets': 0,
+                                        'searchable':false,
+                                        'orderable':false,
+                                        'className': 'dt-body-center',
+                                        'render': function (data, type, full, meta){
+                                            console.log('whats in here baby3??'+JSON.stringify(full.clickRecord.Id));
+                                              return "<input type='checkbox' onclick='UpdateHidden(this);' value='" +full.clickRecord.Id +"'/>";
+                                          },
+                                        'width':'2%'
+                                        },
+                                        {"data":"clickRecord.Clicked_By_User__c","title":"Clicked By","defaultContent":"", "width":"10%"},
+                                        {"data":"clickRecord.Name","title":"Click Rec Number","defaultContent":""}
+                                        ]
+                            console.log(JSON.stringify(cols2));
+                            createDataTable("tblClass1",cols2 ,result);
+                        }else{
+                        //$("div[id*=pgBlockMsg]").show();
+                        }                              
+                    }, 
+                    {escape: true}
+                    );           
+                }
+
+                function UpdateHidden(clikrec){
+                    if(clikrec.checked){
+                        clicksLst += clikrec.value + '=' + $('#' + clikrec.value).val()  + ',';
+                        console.log('clicks selected: '+clicksLst);
+                        console.log('input hidden'+$("input[id*=hdnItmList]").val());
+                        $("input[id*=hdnItmList]").val(clicksLst);
+                        console.log('input hidden'+$("input[id*=hdnItmList]").val());
+                    }else{
+                        //var clksToRemove = clicksLst.split(clikrec.value + '=' + $('#' + clikrec.value).val() + ',');
+                    }
+                           
+                        
+                }
+         
+                    
+    </script>
+    <script>
+        function getTimeStamp(){
+                    return new Date().toLocaleString(undefined, {
+                        day: 'numeric',
+                        month: 'numeric',
+                        year: 'numeric',
+                        hour: '2-digit',
+                        minute: '2-digit',
+                        second: '2-digit',
+                    })
+                }
+                
+                
+                function readLog(){
+                    console.log('text area val: '+document.getElementById("pg_00:pgform_00:pgBlk_00:pgBlkSect_00:pgBlkTxtarea_00").value);
+                    return document.getElementById("pg_00:pgform_00:pgBlk_00:pgBlkSect_00:pgBlkTxtarea_00").value;
+                }
+        
+        
+                function executeRemoting(){
+                    var tstmp = getTimeStamp();    
+                    var logFile = readLog();       
+                    ClickContoller_cmeraki_v01.createClickRecord(
+                        tstmp,logFile,
+                        function(result, event){
+                            console.log('RESULT:   '+JSON.stringify(result));
+                            console.log('EVENT:   '+Object.getOwnPropertyNames(event));
+                            console.log('statuscode:  '+event.statusCode);
+                            console.log('type:  '+event.type);
+                            console.log('tid:  '+event.tid);
+                            console.log('ref:  '+event.ref);
+                            console.log('action: '+event.action);
+                            console.log('method:  '+event.method);
+                            console.log('result:  '+JSON.stringify(event.result));
+                            console.log('status:  '+event.status);
+        
+                                                      
+                        }, 
+                        {escape: true}
+                    );           
+                }
+    </script>
+    <style>
+        /*.wrapper {
+                    text-align: center;
+                    //background-color: red;
+                }
+                .clickbtn_00 {
+                    left: 50%;
+                    top: 40%;
+                    position: absolute;
+                    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                    padding: 15px 25px;
+                    font-size: 24px;
+                    cursor: pointer;
+                    text-align: center;
+                    text-decoration: none;
+                    outline: none;
+                    color: #fff;
+                    background-color: #4CAF50;
+                    border: none;
+                    border-radius: 15px;
+                }
+                
+        
+                
+        
+                .clickbtn_00:active {
+                    background-color: #3e8e41;
+                    box-shadow: 0 1px #665;
+                    transform: translateY(4px);
+                }*/
+                
+                div .bPageBlock.brandSecondaryBrd.apexDefaultPageBlock.secondaryPalette{
+                    background-color: white;
+                    
+                     
+                }
+                div .pbBody{
+                    background-color: white;
+                    opacity: 0.83;   
+                }
+        
+                .log_search_box {
+                    margin-left: 5px;
+                    display: flex;
+                    width: 250px;
+                    height: 22px;
+                    border: .5px solid #d1d1d1;
+                    box-sizing: border-box;
+                    background-color: #f2ffff;
+                    padding: 5px;
+                    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                }
+                
+        
+                .log_search_label {
+                    display: flex;
+                    font-size: 18px;
+                    font-weight: italic;
+                    //box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+                }
+                
+        
+                /*.sorting {
+                    font-size: 130%;
+                    font-weight: 10;
+                    font-family: 'Yantramanav', sans-serif;
+                    line-height: 70%;
+                    color: #3A6168;
+                    padding-top: 28%;
+                }*/
+                
+                /*div containing everything below */
+                .dataTables_scroll {
+                    margin-top: 10px;
+                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                    border: .1px black;
+                    
+                }
+        
+                /*Page size drop down*/
+                .dataTables_length label {
+                    float: right
+                }
+                    
+                /*for button - tricky*/
+                /*http://css3buttongenerator.com/*/
+                div input.btn {
+                    margin: auto;
+                    display: block;
+                    background: #caeded;
+                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                    background-image: -webkit-linear-gradient(top, #caeded, #9db7c7);
+                    background-image: -moz-linear-gradient(top, #caeded, #9db7c7);
+                    background-image: -ms-linear-gradient(top, #caeded, #9db7c7);
+                    background-image: -o-linear-gradient(top, #caeded, #9db7c7);
+                    background-image: linear-gradient(to bottom, #caeded, #9db7c7);
+                    -webkit-border-radius: 14;
+                    -moz-border-radius: 14;
+                    border-radius: 12px;
+                    font-family: 'Yantramanav', sans-serif;
+                    color: #black;
+                    font-size: 14px;
+                    padding: 4px 20px 4px 20px;
+                    text-decoration: none;
+                }
+        
+                div input.btn:hover {
+                    margin: auto;
+                    display: block;
+                    background: #caeded;
+                    background-image: -webkit-linear-gradient(top, #caeded, #9db7c7);
+                    background-image: -moz-linear-gradient(top, #caeded, #9db7c7);
+                    background-image: -ms-linear-gradient(top, #caeded, #9db7c7);
+                    background-image: -o-linear-gradient(top, #caeded, #9db7c7);
+                    background-image: linear-gradient(to bottom, #caeded, #9db7c7);
+                    text-decoration: none;
+                }
+        
+        
+                div input.btn:active {
+                    margin: auto;
+                    display: block;
+                    background-image: -webkit-linear-gradient(top, #caeded, #9db7c7);
+                    background-image: -moz-linear-gradient(top, #caeded, #9db7c7);
+                    background-image: -ms-linear-gradient(top, #caeded, #9db7c7);
+                    background-image: -o-linear-gradient(top, #caeded, #9db7c7);
+                    background-image: linear-gradient(to bottom, #caeded, #9db7c7);
+                    box-shadow: 0 1px #665;
+                    transform: translateY(4px);
+                }
+        
+        
+                /*Search Filter*/
+                .dataTables_filter label input {
+                    margin-left: 7px;
+                    display: flex;
+                    width: 150px;
+                    height: 18px;
+                    border: .5px solid #d1d1d1;
+                    box-sizing: border-box;
+                    background-color: #f2ffff;//rgb(216, 237, 255)
+                    padding: 0.5px;
+                    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.4), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+                }
+        
+                /*Search filter label*/
+                .dataTables_filter label {
+                    font-size: 18px;
+                    font-weight: italic;
+                    display: flex;
+                }
+        
+                /*Paginate div*/
+                div .dataTables_paginate {
+                    margin-top: 7px;
+                    float: left;
+                    display: flex;
+                }
+                
+                /*Paginate - prev button
+                div a.paginate_button.previous {
+                    margin-right: 7px;
+                    font-weight: bold;
+                    font-size: small;
+                    font-family: monospace;
+                }
+        
+                /*Paginate - next button
+                div a.paginate_button.next {
+                    margin-right: 7px;
+                    font-weight: bold;
+                    font-size: small;
+                    font-family: monospace;
+                }*/
+        
+                /*Paginate - current page button*/
+                div span a.paginate_button.current {
+                    margin-right: 7px;
+                    font-weight: bold;
+                    font-size: small;
+                    font-family: monospace;
+                    color: blue;
+                    text-decoration: underline;
+                }
+        
+                div span a.paginate_button {
+                    margin-right: 7px;
+                    font-weight: bold;
+                    font-size: small;
+                    font-family: monospace;
+                    color: chocolate;
+                    text-decoration: underline;
+        
+                }
+        
+                div span a.paginate_button:hover {
+                    margin-right: 7px;
+                    font-weight: bold;
+                    font-size: small;
+                    color: green;
+                    font-family: monospace;
+                }
+        
+        
+                /*Table - show 1 0f x entries*/
+                div .dataTables_info {
+                    display: none;
+                }
+        
+                /*Page size drop down*/
+                .dataTables_length {
+                    position: relative;
+                    float: right;
+                    select {
+                        position: absolute;
+                        overflow: hidden;
+                        height: 0px;
+                        opacity: 0;
+                        z-index: -1;
+                    }
+                }
+                
+                div .tblClass1 tbody tr:hover{
+                    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.4), 0 3px 8px 0 rgba(0, 0, 0, 0.19);
+                    transition: All 0.5s ease;
+                    -webkit-transition: All 0.5s ease;
+                    -moz-transition: All 0.5s ease;
+                    -o-transition: All 0.5s ease;
+                    //background-color: azure;
+                    //font-weight: bold;
+                    //font-size: 120%;
+                }
+                
+                div .tblClass1 tbody tr:nth-child(odd) td{
+                    border-color: white;
+                    background-color: rgb(216, 237, 255);
+                }
+                
+                div .tblClass1 tbody tr:nth-child(even) td{
+                    border-color: white;
+        
+                }
+                
+                homeTab .listViewport .subNav .linkBar, .homeTab .mComponent .cHeader, .homeTab .genericTable, .homeTab .bSubBlock, .homeTab .bPageBlock {
+                    box-shadow: 0 .5px 1px 0 rgba(0, 0, 0, 0.4), 0 .5px 1px 0 rgba(0, 0, 0, 0.19);
+                    border-top: 2.9px solid lightgrey;
+                }
+    </style>
+    <apex:form id="pgform_00">
+        <apex:pageBlock id="pgBlk_00">
+            <!-- <apex:pageBlockButtons > -->
+            <apex:pageBlockSection id="pgBlkSect_00" columns="1">
+                <apex:outputLabel styleClass="log_search_label">Log File: &nbsp;
+                    <apex:inputTextarea value="{!logFile}" id="pgBlkTxtarea_00" styleClass="log_search_box" /></apex:outputLabel>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+        <apex:outputPanel >
+            <apex:pageBlock id="pgBlk_01">
+                <!-- <div class="wrapper"> -->
+                <!-- <apex:pageBlockButtons > -->
+                <apex:commandButton value="Click Me!!!" onclick="executeRemoting()" onComplete="return null;" />
+                <apex:commandButton value="debug Me!!!" action="{!debug}" />
+                <!--styleclass="clickbtn_00"-->
+                <!-- </div>    -->
+                <!-- <div class="wrapper">
+                <button id="button" class="clickbtn_00" onclick="executeRemoting()"  onComplete="return null;">Click me</button>
+            </div> -->
+                <!-- </apex:pageBlockButtons> -->
+                <apex:pageBlockSection columns="1">
+                    <apex:pageBlockTable id="table" styleClass="tblClass1" value="{!clicksList}" var="clicks"></apex:pageBlockTable>
+                </apex:pageBlockSection>
+            </apex:pageBlock>
+        </apex:outputPanel>
+        <apex:inputHidden id="hdnItmList"   value="{!strclicksInfo}" />
+        
+    </apex:form>
+</apex:page>

@@ -463,6 +463,14 @@ VPH lvl 1</description>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
+        <fullName>DiscountingApproved__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Discounting Approved</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>DisplayUrl</fullName>
         <trackHistory>false</trackHistory>
     </fields>
