@@ -1,0 +1,54 @@
+<apex:page showHeader="false" standardStylesheets="false" sidebar="false" docType="html-5.0" Controller="processAccountsController_app0" applyBodyTag="False" applyHtmlTag="False">
+    <script>
+        function process() {
+                processAccounts();
+        }
+    </script>
+
+    <head>
+        <title>Process Accounts</title>
+        <apex:slds />
+    </head>
+
+    <body class="slds-scope">
+        <apex:form >
+        <apex:actionFunction name="processAccounts" action="{!processAccounts}"  />
+        <div class="slds-page-header">
+        </div>
+
+        <div>
+            <table class="slds-table slds-table_bordered slds-table_cell-buffer slds-table_striped">
+                <thead>
+                    <tr class="slds-text-title_caps">
+                        <th scope="col">
+                            <div class="slds-truncate" title="select"></div>
+                        </th>
+                        <th scope="col">
+                            <div class="slds-truncate" title="AccName">Account Name</div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <apex:repeat value="{!Accounts}" var="accWrap">
+                        <tr width="100%">
+                            <td width="4%">
+                                <input type="checkbox" name="options" id="checkbox-1" value="{!accWrap.selected}" >
+                                <label class="slds-checkbox__label" for="checkbox-1">
+                                    
+                                </label>
+                                </input>
+                            </td>
+                            <td width="25%">{!accWrap.acc.Name}</td>
+                            <td width="25%">{!accWrap.acc.AnnualRevenue}</td>
+                            <td width="25%"> {!accWrap.acc.CreatedBy.Name}</td>
+                        </tr>
+                    </apex:repeat>
+                </tbody>
+            </table>
+            <div text-align = "center">
+            <button class="slds-button slds-button_brand" onclick="process">Save</button>
+            </div>
+        </div>
+        </apex:form>
+    </body>
+</apex:page>

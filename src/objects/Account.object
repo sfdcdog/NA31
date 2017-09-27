@@ -1559,6 +1559,12 @@
         <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>Private</sharingModel>
+    <validationRules>
+        <fullName>check_for_false</fullName>
+        <active>false</active>
+        <errorConditionFormula>AND(NOT(Core_IPS_Active__c),ISPICKVAL(AccountSource, &apos;Webinaris&apos;)  )</errorConditionFormula>
+        <errorMessage>changed</errorMessage>
+    </validationRules>
     <webLinks>
         <fullName>Billing</fullName>
         <availability>online</availability>
@@ -1588,5 +1594,16 @@
         <protected>false</protected>
         <requireRowSelection>true</requireRowSelection>
         <url>https://www.google.com/webhp?sourceid=chrome-instant&amp;ion=1&amp;espv=2&amp;ie=UTF-8</url>
+    </webLinks>
+    <webLinks>
+        <fullName>QuickOpportunity</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Quick Opportunity</masterLabel>
+        <openType>sidebar</openType>
+        <page>quickopportunitywizard</page>
+        <protected>false</protected>
     </webLinks>
 </CustomObject>

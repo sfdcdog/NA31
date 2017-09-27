@@ -234,6 +234,10 @@
             <label>Delivery/Installation Status</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N37000006ijGv</field>
+            <label>Discount Type</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N370000046SO7</field>
             <label>Main Competitor(s)</label>
         </opportunityListFieldsLabelMappings>
@@ -285,6 +289,7 @@
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>00N370000046SO5</field>
             <field>00N370000046SO6</field>
+            <field>00N37000006ijGv</field>
             <field>00N370000046SO7</field>
             <field>00N370000046SO8</field>
             <field>00N370000046SO9</field>
@@ -451,6 +456,10 @@
             <label>Delivery/Installation Status</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N37000006ijGv</field>
+            <label>Discount Type</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N370000046SO7</field>
             <label>Main Competitor(s)</label>
         </opportunityListFieldsLabelMappings>
@@ -502,6 +511,7 @@
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>00N370000046SO5</field>
             <field>00N370000046SO6</field>
+            <field>00N37000006ijGv</field>
             <field>00N370000046SO7</field>
             <field>00N370000046SO8</field>
             <field>00N370000046SO9</field>
@@ -668,6 +678,10 @@
             <label>Delivery/Installation Status</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N37000006ijGv</field>
+            <label>Discount Type</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N370000046SO7</field>
             <label>Main Competitor(s)</label>
         </opportunityListFieldsLabelMappings>
@@ -719,6 +733,7 @@
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>00N370000046SO5</field>
             <field>00N370000046SO6</field>
+            <field>00N37000006ijGv</field>
             <field>00N370000046SO7</field>
             <field>00N370000046SO8</field>
             <field>00N370000046SO9</field>
@@ -885,6 +900,10 @@
             <label>Delivery/Installation Status</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N37000006ijGv</field>
+            <label>Discount Type</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N370000046SO7</field>
             <label>Main Competitor(s)</label>
         </opportunityListFieldsLabelMappings>
@@ -936,6 +955,7 @@
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>00N370000046SO5</field>
             <field>00N370000046SO6</field>
+            <field>00N37000006ijGv</field>
             <field>00N370000046SO7</field>
             <field>00N370000046SO8</field>
             <field>00N370000046SO9</field>
@@ -1110,6 +1130,10 @@
             <label>Delivery/Installation Status</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>00N37000006ijGv</field>
+            <label>Discount Type</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>00N370000046SO7</field>
             <label>Main Competitor(s)</label>
         </opportunityListFieldsLabelMappings>
@@ -1163,6 +1187,7 @@
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>00N370000046SO5</field>
             <field>00N370000046SO6</field>
+            <field>00N37000006ijGv</field>
             <field>00N370000046SO7</field>
             <field>00N370000046SO8</field>
             <field>00N370000046SO9</field>

@@ -327,6 +327,13 @@
         <trackTrending>false</trackTrending>
     </fields>
     <fields>
+        <fullName>SourceId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
         <fullName>Status</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
@@ -394,73 +401,10 @@
         <label>All Open Cases</label>
     </listViews>
     <listViews>
-        <fullName>CEP_Case_Case</fullName>
+        <fullName>CaseQueue1_Case</fullName>
         <filterScope>Queue</filterScope>
-        <label>CEP Admin</label>
-        <queue>CEP_Case</queue>
-        <sharedTo>
-            <allInternalUsers></allInternalUsers>
-        </sharedTo>
-    </listViews>
-    <listViews>
-        <fullName>Core_IPS_CaseQ_Org_002_Unassigned_Case</fullName>
-        <filterScope>Queue</filterScope>
-        <label>IPS - Org 002 - Unassigned</label>
-        <queue>Core_IPS_CaseQ_Org_002_Unassigned</queue>
-        <sharedTo>
-            <allInternalUsers></allInternalUsers>
-        </sharedTo>
-    </listViews>
-    <listViews>
-        <fullName>Core_IPS_CaseQ_Org_003_ASMO_Case</fullName>
-        <filterScope>Queue</filterScope>
-        <label>IPS - Org 003 - ASMO</label>
-        <queue>Core_IPS_CaseQ_Org_003_ASMO</queue>
-        <sharedTo>
-            <allInternalUsers></allInternalUsers>
-        </sharedTo>
-    </listViews>
-    <listViews>
-        <fullName>Core_IPS_CaseQ_Org_003_Unassigned_Case</fullName>
-        <filterScope>Queue</filterScope>
-        <label>IPS - Org 003 - Unassigned</label>
-        <queue>Core_IPS_CaseQ_Org_003_Unassigned</queue>
-        <sharedTo>
-            <allInternalUsers></allInternalUsers>
-        </sharedTo>
-    </listViews>
-    <listViews>
-        <fullName>Core_IPS_CaseQ_Org_011_Unassigned_Case</fullName>
-        <filterScope>Queue</filterScope>
-        <label>IPS - Org 011 - Unassigned</label>
-        <queue>Core_IPS_CaseQ_Org_011_Unassigned</queue>
-        <sharedTo>
-            <allInternalUsers></allInternalUsers>
-        </sharedTo>
-    </listViews>
-    <listViews>
-        <fullName>Core_IPS_CaseQ_Unassigned_Case</fullName>
-        <filterScope>Queue</filterScope>
-        <label>IPS - Unassigned</label>
-        <queue>Core_IPS_CaseQ_Unassigned</queue>
-        <sharedTo>
-            <allInternalUsers></allInternalUsers>
-        </sharedTo>
-    </listViews>
-    <listViews>
-        <fullName>Core_JAD2_Unassigned_Case_Queue_Case</fullName>
-        <filterScope>Queue</filterScope>
-        <label>JAD2 Unassigned</label>
-        <queue>Core_JAD2_Unassigned_Case_Queue</queue>
-        <sharedTo>
-            <allInternalUsers></allInternalUsers>
-        </sharedTo>
-    </listViews>
-    <listViews>
-        <fullName>GEC_Case_Queue_Case</fullName>
-        <filterScope>Queue</filterScope>
-        <label>GEC Case Queue</label>
-        <queue>GEC_Case_Queue</queue>
+        <label>CaseQueue1</label>
+        <queue>CaseQueue1</queue>
         <sharedTo>
             <allInternalUsers></allInternalUsers>
         </sharedTo>
